@@ -1,0 +1,37 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background-color:#ffffff;
+}
+
+.content {
+  width: 100%; /* Ensure the content spans the entire width */
+  margin: 0 auto; /* Center the content horizontally */
+  
+}
+.image-container {
+  display: flex;
+  overflow-x: auto; 
+  background-color: #d8b578; /* Set background color with opacity */
+  padding: 15px; /* Add padding to the container */
+  
+}
+.image-container img {
+  scroll-snap-align: start; /* Align images to the start of the container */
+  width: 300px; /* Set a fixed width for the images */
+  height: auto;
+  margin-right: 0px; /* Add margin between images */
+}
+
+.image-wrapper {
+  flex: 1; /* Make the image wrappers fill the available space */
+  margin: 0 2px; /* Add margin to create spacing between images */
+}
+
+.image-wrapper img {
+  width: 50%; /* Ensure images fill their containers */
+  height: auto;
+}
+
