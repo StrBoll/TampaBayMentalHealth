@@ -1,14 +1,13 @@
 import React from 'react';
 import './App.css';
 import Header from './Header';
-import Footer from './footer.js';
 import Bottom from './bottom.js';
 import ImageOverlay from './ImageOverlay.jsx';
 import SearchableList from './list.js';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
 import image3 from './images/image3.jpg';
-import Map from './Map.js';
+import Navbar from './navbar.js';
 
 import man from './images/man.jpg';
 import { Carousel } from "./Carousel";
@@ -32,7 +31,9 @@ function App() {
 
   return (
     <div className="App">
-      <Header />
+      <React.Fragment>
+			<Navbar/>
+		  </React.Fragment>
       <div>
       <Carousel />
       </div>
