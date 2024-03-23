@@ -13,13 +13,13 @@ function Navbar() {
 
 	return (
 		<header>
-    <h3>LOGO</h3>
     <nav ref={navRef}>
+    <a href="/" class="logo">Logo</a>
         <div>
             <h>email</h>
             <h>phone number</h>
         </div>
-        <a href="/#" class="book-appointment-btn">Book an appointment</a>
+        <a href="/bookapt" class="book-appointment-btn">Book an appointment</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
         </button>
