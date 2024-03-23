@@ -40,7 +40,7 @@ function App() {
               <div>
                 <Carousel />
               </div>
-              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d225469.4885892992!2d-82.62012009074188!3d27.995096939710034!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c541de4ecb17%3A0xd5e792011211d163!2sTampa%20Bay%20Psychiatry!5e0!3m2!1sen!2sus!4v1711157741200!5m2!1sen!2sus" width="600" height="450" style={{ border: "0" }} allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13OSFSfuM3OZS3KLvxp50F2IhOqrkMv0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
               <div className="content">
                 <div className="image-container">
                   <div className="image-wrapper">
