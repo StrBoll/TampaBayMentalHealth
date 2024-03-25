@@ -35,7 +35,7 @@ function Header() {
 
   return (
     <header style={headerStyle}>
-      <h1>Tampa bay mental health</h1>
+      <h1>Tampa Bay Mental Health</h1>
     </header>
   );
 }
