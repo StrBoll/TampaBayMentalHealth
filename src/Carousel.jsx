@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import { CarouselItem } from "./CarouselItem";
+import "./carousel.css"
 export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [

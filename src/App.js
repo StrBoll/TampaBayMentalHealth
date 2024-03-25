@@ -8,6 +8,7 @@ import SearchableList from './list.js';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
 import image3 from './images/image3.jpg';
+import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
 import man from './images/man.jpg';
 import { Carousel } from "./Carousel";
@@ -34,7 +35,7 @@ function App() {
     <Router>
         <Navbar />
         <Routes>
-          <Route path="/bookapt" element={<bookapt />} />
+          <Route path="/bookapt" element={<Bookapt />} />
           <Route path="/" element={
             <React.Fragment>
               <div>
