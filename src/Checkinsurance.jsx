@@ -1,35 +1,53 @@
 import React from 'react';
 
-const Checkinsurance = () => {
-  return (
-    <bottom style={styles.bottom}>
-      <div style={styles.container}>
-      <p style={styles.text}>Phone number here</p>
-      <p style={styles.text}>example@gmail.com</p>
-      </div>
-    </bottom>
-  );
+const CheckInsurance = () => {
+    const acceptedInsurances = [
+        "Sunshine",
+        "Ambetter",
+        "United HealthCare",
+        "Cigna",
+        "Humana",
+        "Simply Healthcare",
+        "Aetna",
+        "Carelon",
+        "Florida Community Care",
+        "Florida Blue",
+        "Magellan",
+        "OPtum"
+    ];
+
+    return (
+        <div style={styles.container}>
+            <h2 style={styles.title}>Accepted Insurances</h2>
+            <ul style={styles.insuranceList}>
+                {acceptedInsurances.map(insurance => (
+                    <li key={insurance} style={styles.insuranceItem}>{insurance}</li>
+                ))}
+            </ul>
+        </div>
+    );
 };
 
-
 const styles = {
-    bottom: {
-      backgroundColor: '#d8b578',
-      color: '#fff',
-      textAlign: 'center',
-      padding: '20px 0',
-      width: '100%',
-      bottom: 0,
-      height: 100,
-      left: 0,
-    },
     container: {
-      maxWidth: '550px',
-      margin: '0 auto',
+        backgroundColor: 'white',
+        padding: '20px',
     },
-    text: {
-      fontSize: '14px',
+    title: {
+        fontFamily: '"Libre Baskerville", sans-serif',
+        fontSize: '40px',
+        color: 'blue',
+        textAlign: 'center',
     },
-  };
-  
-export default Checkinsurance;
+    insuranceList: {
+        listStyleType: 'none',
+        padding: 0,
+    },
+    insuranceItem: {
+        fontFamily: 'Arial, Helvetica, sans-serif',
+        color: 'blue',
+        marginBottom: '5px',
+    },
+};
+
+export default CheckInsurance;
