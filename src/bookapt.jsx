@@ -1,11 +1,14 @@
 import React from 'react';
 import Bottom from './bottom';
+import Particlebg from './Particles';
 
 const Bookapt = () => {
   return (
-
-   
+    <div> 
+      <Particlebg/>
+    
     <Bottom />
+    </div>
   );
 };
 
