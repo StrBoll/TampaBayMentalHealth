@@ -7,7 +7,7 @@ const Bookapt = () => {
     <div> 
       <Particlebg/>
     
-    <Bottom />
+   
     </div>
   );
 };
