@@ -20,6 +20,7 @@ function Navbar() {
             <h>phone number</h>
         </div>
         <a href="/bookapt" class="book-appointment-btn">Book an appointment</a>
+        <a href="/checkinsurance" class="checkinsurance-btn">Accepted insurance</a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
         </button>

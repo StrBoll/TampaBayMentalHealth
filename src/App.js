@@ -3,6 +3,7 @@ import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
 import Bottom from './bottom.js';
+import Checkinsurance from './Checkinsurance.jsx';
 import ImageOverlay from './ImageOverlay.jsx';
 import SearchableList from './list.js';
 import image1 from './images/image1.jpg';
@@ -36,6 +37,7 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/bookapt" element={<Bookapt />} />
+          <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>
               <div>
