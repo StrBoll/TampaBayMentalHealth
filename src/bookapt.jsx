@@ -1,13 +1,11 @@
 import React from 'react';
+import Bottom from './bottom';
 
 const Bookapt = () => {
   return (
-    <bottom style={styles.bottom}>
-      <div style={styles.container}>
-      <p style={styles.text}>Phone number here</p>
-      <p style={styles.text}>example@gmail.com</p>
-      </div>
-    </bottom>
+
+   
+    <Bottom />
   );
 };
 
