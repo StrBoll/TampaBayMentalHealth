@@ -3,18 +3,18 @@ import React from 'react';
 const Bottom = () => {
   return (
     <footer style={styles.bottom}>
-      <div style={styles.leftContainer}>
-        <p style={styles.title}>Contact Us</p>
-        <div style={styles.buttonsContainer}>
-          <button style={styles.button}>Schedule an Appointment</button>
+      <div style={styles.container}>
+        <div style={styles.leftContent}>
+          <p style={styles.title}>Contact Us</p>
+          <div style={styles.buttonsContainer}>
+            <button style={styles.button}>Schedule an Appointment</button>
+          </div>
+          <p style={styles.text}>Phone: (813) 269-2920</p>
+          <p style={styles.text}>Fax: (813) 269-2921</p>
+          <p style={styles.text}>office@tampabaymentalhealth.net</p>
+    
         </div>
-        <p style={styles.text}>Phone: (813) 269-2920</p>
-        <p style={styles.text}>Fax: (813) 269-2921</p>
-        <p style={styles.text}>office@tampabaymentalhealth.net</p>
-        <div style={styles.blackBox}></div> {/* Black box */}
-      </div>
-      <div style={styles.rightContainer}>
-        <div style={styles.container}>
+        <div style={styles.mapContainer}>
           <div style={styles.grayBlock}>
             <iframe
               title="Google Map"
@@ -39,25 +39,24 @@ const styles = {
     textAlign: 'center',
     padding: '20px 0',
     width: '100%',
-    bottom: 0,
-    left: 0,
-    display: 'flex', // Use Flexbox for flexible positioning
-  },
-  leftContainer: {
-    flex: '1', // Let the left container grow to fill available space
-    padding: '0 120px', // Add padding to the left container
-    position: 'relative', // Position relative for positioning the black box
-  },
-  rightContainer: {
-    flex: '1', // Let the center container grow to fill available space
   },
   container: {
+    maxWidth: '900px',
     margin: '0 auto',
-    padding: '0 20px', // Add padding to the center container
+    display: 'flex',
+    justifyContent: 'space-between',
+    position: 'relative',
+  },
+  leftContent: {
+    paddingRight: '20px',
+  },
+  mapContainer: {
+    width: '350px',
+    height: '350px',
   },
   title: {
-    fontSize: '32px', // Adjust font size as needed
-    marginBottom: '15px', // Add some space between title and other content
+    fontSize: '32px',
+    marginBottom: '15px',
     fontFamily: 'Montserrat, sans-serif',
   },
   text: {
@@ -66,11 +65,14 @@ const styles = {
     marginBottom: '5px',
   },
   grayBlock: {
-    height: '350px', // Height of the gray block
-    backgroundColor: 'gray', // Background color of the gray block
+    position: 'absolute',
+    top: 0,
+    right: 0,
+    left: 400,
+    height: '100%',
+    backgroundColor: 'gray',
   },
   buttonsContainer: {
-    marginTop: '20px',
     display: 'flex',
     justifyContent: 'space-around',
     marginBottom: '20px',
@@ -80,18 +82,10 @@ const styles = {
     backgroundColor: '#4CAF50',
     color: 'white',
     border: 'none',
-    borderRadius: '5px',
+    borderRadius: '25px', // Set border-radius to half of the button height for stadium shape
     cursor: 'pointer',
     fontSize: '16px',
     fontFamily: 'Montserrat, sans-serif',
-  },
-  blackBox: {
-    position: 'absolute',
-    top: 0,
-    right: 0,
-    width: '50px',
-    height: '100%',
-    backgroundColor: 'black',
   },
 };
 
