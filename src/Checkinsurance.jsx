@@ -16,38 +16,23 @@ const CheckInsurance = () => {
         "OPtum"
     ];
 
+    const stylePicture = {
+        container: {
+            backgroundColor: 'white',
+            width: "100%",
+        },
+        image: {
+            width: '100%',
+            height: '100%',
+        }
+    };
+    
     return (
-        <div style={styles.container}>
-            <h2 style={styles.title}>Accepted Insurances</h2>
-            <ul style={styles.insuranceList}>
-                {acceptedInsurances.map(insurance => (
-                    <li key={insurance} style={styles.insuranceItem}>{insurance}</li>
-                ))}
-            </ul>
+        <div style={stylePicture.container}>
+            <img src={require("./images/SmilingFinal.png")} alt="Description of the image" style={stylePicture.image} />
+            {/* Other content */}
         </div>
     );
-};
-
-const styles = {
-    container: {
-        backgroundColor: 'white',
-        padding: '20px',
-    },
-    title: {
-        fontFamily: '"Libre Baskerville", sans-serif',
-        fontSize: '40px',
-        color: 'blue',
-        textAlign: 'center',
-    },
-    insuranceList: {
-        listStyleType: 'none',
-        padding: 0,
-    },
-    insuranceItem: {
-        fontFamily: 'Arial, Helvetica, sans-serif',
-        color: 'blue',
-        marginBottom: '5px',
-    },
 };
 
 export default CheckInsurance;
