@@ -1,22 +1,9 @@
 import React from 'react';
 import OverlayComponent from './OverLayComponent';
 import SecondSection from './SecondSectionInsurance';
+import SecondComponent from './InsuranceDropDown';
 
 const CheckInsurance = () => {
-    const acceptedInsurances = [
-        "Sunshine",
-        "Ambetter",
-        "United HealthCare",
-        "Cigna",
-        "Humana",
-        "Simply Healthcare",
-        "Aetna",
-        "Carelon",
-        "Florida Community Care",
-        "Florida Blue",
-        "Magellan",
-        "OPtum"
-    ];
 
     const stylePicture = {
         container: {
@@ -47,6 +34,9 @@ const CheckInsurance = () => {
             <img src={require("./images/SmilingFinal.png")} alt="Description of the image" style={stylePicture.image} />
             <OverlayComponent />
             <SecondSection />
+            
+            
+
             
             {/* Other content */}
         </div>

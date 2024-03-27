@@ -7,7 +7,7 @@ const OverlayComponent = () => {
             bottom: '20px', // Align the bottom of the overlay with the bottom of the container
             left: '15%', // Adjust padding from the left for different screen sizes
             width: '70%', // Adjust width for different screen sizes
-            height: '10%', // Cover only the bottom 25 pixels of the container
+            height: '40%', // Cover only the bottom 25 pixels of the container
             background: 'linear-gradient(to bottom, White 75%, #dedede 75%)',            
             borderRadius: '8px',
             display: 'flex',
@@ -26,9 +26,10 @@ const OverlayComponent = () => {
             padding: '2vh 4vw', // Responsive padding based on viewport width and height
             marginBottom: '2vh', // Add margin to separate the button from other content
             marginLeft: '0%', // Adjusted margin to be relative to container width
+            marginTop: '20px',
         },
         text: {
-            color: 'Granite',
+            color: '#82817f',
             fontFamily: 'Domine, Georgia, sans-serif',
             fontSize: '2vw', // Responsive font size based on viewport width
             fontWeight: 400,
@@ -39,7 +40,7 @@ const OverlayComponent = () => {
             width: '60%', // Set width relative to the size of the container
             height: 'auto', // Maintain aspect ratio
             position: 'relative', // Add position relative
-            top: '-25px', // Move the image 25 pixels higher
+            top: '-35px', // Move the image 25 pixels higher
         },
         disclaimer: {
             color: 'gray',
@@ -60,7 +61,7 @@ const OverlayComponent = () => {
                 <p style={styles.text}>Insurance Accepted</p>
                 <button style={styles.button}>See more..</button>
             </div>
-            <img src={require('./images/logoCollage.png')} alt="Description of the image" style={styles.image} />
+            <img src={require('./images/logoCollage1.png')} alt="Description of the image" style={styles.image} />
             <p style={styles.disclaimer}>Disclaimer: Understanding Insurance Coverage for Psychiatry Services</p>
         </div>
     );

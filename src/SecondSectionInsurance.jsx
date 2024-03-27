@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SecondComponent from './InsuranceDropDown.jsx';
 const SecondSection = () => {
     const styles = {
         container: {
@@ -11,7 +11,7 @@ const SecondSection = () => {
 
     return (
         <div style={styles.container}>
-            {/* Content of the second section goes here */}
+            <SecondComponent />
         </div>
     );
 };
