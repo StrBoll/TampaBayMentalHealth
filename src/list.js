@@ -47,10 +47,23 @@ const SearchableList = ({ items }) => {
     marginBottom: '5px', // Add margin between lines
   };
 
+  // Inline styles for the title above the toggle button
+  const titleStyle = {
+    color: '#82817F',
+    textAlign: 'left',
+    marginTop: '0',
+    marginBottom: '12px',
+    paddingBottom: '0',
+    fontFamily: 'Domine, Georgia, sans-serif',
+    fontSize: '24px',
+    fontWeight: '400',
+  };
+
   return (
     <div className="searchable-list-container">
       <div className="image-left"></div>
       <div className="searchable-list-content">
+        <div style={titleStyle}>Find if your eligible in seconds</div>
         {isVisible && (
           <input
             type="text"
