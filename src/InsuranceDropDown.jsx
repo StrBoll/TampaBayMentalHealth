@@ -7,7 +7,7 @@ const SecondComponent = () => {
             left: '15%',
             width: '70%', // Adjust width for different screen sizes
             height: '40%', // Adjust height for different screen sizes
-            background: 'linear-gradient(to bottom, White 75%, #dedede 75%)',
+            background: 'White',
             borderRadius: '8px',
             display: 'flex',
             justifyContent: 'space-between', // Distribute items along the main axis with space between them
@@ -18,10 +18,9 @@ const SecondComponent = () => {
         dropdown: {
             maxHeight: '200px',
             overflowY: 'auto',
-            border: '1px solid #ccc',
             borderRadius: '4px',
             padding: '5px',
-            width: '100px', // Width of the dropdown items
+            width: '100%', // Width of the dropdown items
         },
         item: {
             padding: '5px',

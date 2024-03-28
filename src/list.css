@@ -1,32 +1,57 @@
-  .searchable-list-container {
+.searchable-list-container {
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
+  border-color: white;
+  border: none; /* Remove border */
 }
 
-  
-  .search-input {
-    width: 200%;
-    padding: 4px;
-    margin-bottom: 10px;
-    border: 1px solid #0c0c0c;
-    border-radius: 4px;
-  }
-  
-  .list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .list-item {
-    background-color: #f0f0f0;
-    border: 1px solid #070707;
-    border-radius: 4px;
-    padding: 3px;
-    margin-bottom: 5px;
-  }
+.search-input {
+  width: 315%;
+  padding: 4px;
+  margin-bottom: 10px;
+  border: 1px solid #0c0c0c;
+  border-radius: 4px;
+}
 
-  .list-item:hover {
-    background-color: #e0e0e0;
-  }
-  
+.list {
+  list-style: none;
+  padding: 0;
+  width: 315%; /* Set width to 100% */
+}
+
+.list-item {
+  white-space: nowrap; /* Prevent line breaks */
+  overflow: hidden; /* Hide overflowing text */
+  text-overflow: ellipsis; /* Show ellipsis for overflowed text */
+  background-color: #333; /* Darker background color */
+  color: #fff; /* White text color */
+  border-radius: 4px;
+  padding: 6px; /* Increased padding for better readability */
+  margin-bottom: 0px;
+  text-align: left; /* Align text to the left */
+}
+
+.list-item:hover {
+  background-color: #007bff; /* Darker hover background color */
+}
+/* list.css */
+
+.arrow {
+  border: solid black;
+  border-width: 0 3px 3px 0;
+  display: inline-block;
+  padding: 3px;
+}
+
+
+
+.down {
+  transform: rotate(45deg);
+  -webkit-transform: rotate(45deg);
+}
+
+
+
+
+

@@ -16,7 +16,7 @@ const OverlayComponent = () => {
             boxSizing: 'border-box', // Include padding and border in the total width and height of the element
         },
         button: {
-            backgroundColor: '#8D5C87',
+            backgroundColor: '#007CBA',
             color: 'white',
             border: 'none',
             borderRadius: '20px',
