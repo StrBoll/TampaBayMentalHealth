@@ -4,15 +4,10 @@
   justify-content: center;
 }
 
-  .image-left,
-  .image-right {
-  margin: 0 10px; /* Adjust the margin as needed */
-}
-
   
   .search-input {
-    width: 100%;
-    padding: 8px;
+    width: 200%;
+    padding: 4px;
     margin-bottom: 10px;
     border: 1px solid #0c0c0c;
     border-radius: 4px;
@@ -27,7 +22,7 @@
     background-color: #f0f0f0;
     border: 1px solid #070707;
     border-radius: 4px;
-    padding: 10px;
+    padding: 3px;
     margin-bottom: 5px;
   }
 

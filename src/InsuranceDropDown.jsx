@@ -1,5 +1,5 @@
 import React from 'react';
-
+import SearchableList from "./list.js";
 const SecondComponent = () => {
     const styles = {
         container: {
@@ -30,16 +30,16 @@ const SecondComponent = () => {
     };
     
     const petNames = [
-        "Max", "Bella", "Charlie", "Lucy", "Cooper", "Daisy", "Bailey", "Luna", "Rocky", "Sadie",
-        "Tucker", "Lola", "Buddy", "Molly", "Stella", "Jack", "Zoey", "Duke", "Maggie", "Bear",
-        "Sophie", "Oliver", "Rosie", "Harley", "Ruby", "Lily", "Leo", "Gracie", "Teddy", "Emma",
-        "Sam", "Chloe", "Riley", "Penny", "Jake", "Zoe", "Milo", "Annie", "Mia", "Gus", "Princess",
-        "Oscar", "Maddie", "Coco", "Jax", "Sasha", "Scout", "Lilly", "Buster"
+        "Blue Cross (BCBS)", "Optum", "United Healthcare", "Cigna", "Wellcare", "Ambetter", "Medicaid", "Simply Healthcare",
+        "Aetna", "Medicare", "Molina healthcare", "Veterans Affairs", "Oscar Healthcare", "Devoted Health", "Sunshine Health",
+        "Humana", "Florida Blue", "Carelon"
     ];
+    
 
     return (
         <div style={styles.container}>
             <div style={styles.dropdown}>
+            <SearchableList items={petNames} />
                 
             </div>
         </div>

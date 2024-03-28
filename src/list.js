@@ -17,7 +17,6 @@ const SearchableList = ({ items }) => {
   return (
     <div className="searchable-list-container">
       <div className="image-left">
-      <img src={image3} alt="Left" />
       </div>
       <div className="searchable-list-content">
         <input
@@ -34,7 +33,7 @@ const SearchableList = ({ items }) => {
         </ul>
       </div>
       <div className="image-right">
-      <img src={image3} alt="Right" />
+      
       </div>
     </div>
   );
