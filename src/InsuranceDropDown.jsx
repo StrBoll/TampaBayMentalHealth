@@ -15,12 +15,33 @@ const SecondComponent = () => {
             boxSizing: 'border-box', // Include padding and border in the total width and height of the element
             marginTop: '20px', // Adjust margin from the top
         },
+        dropdown: {
+            maxHeight: '200px',
+            overflowY: 'auto',
+            border: '1px solid #ccc',
+            borderRadius: '4px',
+            padding: '5px',
+            width: '100px', // Width of the dropdown items
+        },
+        item: {
+            padding: '5px',
+            cursor: 'pointer',
+        },
     };
+    
+    const petNames = [
+        "Max", "Bella", "Charlie", "Lucy", "Cooper", "Daisy", "Bailey", "Luna", "Rocky", "Sadie",
+        "Tucker", "Lola", "Buddy", "Molly", "Stella", "Jack", "Zoey", "Duke", "Maggie", "Bear",
+        "Sophie", "Oliver", "Rosie", "Harley", "Ruby", "Lily", "Leo", "Gracie", "Teddy", "Emma",
+        "Sam", "Chloe", "Riley", "Penny", "Jake", "Zoe", "Milo", "Annie", "Mia", "Gus", "Princess",
+        "Oscar", "Maddie", "Coco", "Jax", "Sasha", "Scout", "Lilly", "Buster"
+    ];
 
     return (
         <div style={styles.container}>
-            
-            
+            <div style={styles.dropdown}>
+                
+            </div>
         </div>
     );
 };

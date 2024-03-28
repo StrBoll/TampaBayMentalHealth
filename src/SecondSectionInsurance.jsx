@@ -1,5 +1,6 @@
 import React from 'react';
-import SecondComponent from './InsuranceDropDown.jsx';
+import SecondComponent from './InsuranceDropDown';
+
 const SecondSection = () => {
     const styles = {
         container: {
@@ -7,11 +8,24 @@ const SecondSection = () => {
             width: '100%',
             minHeight: '1800px', // Set the minimum height of the second section
         },
+        dropdown: {
+            maxHeight: '200px',
+            width: '20%',
+            margin: '0 auto', // Center the dropdown horizontally
+            overflowY: 'auto',
+            border: '1px solid #ccc',
+            borderRadius: '4px',
+            padding: '5px',
+        },
+        item: {
+            padding: '5px',
+            cursor: 'pointer',
+        },
     };
 
     return (
         <div style={styles.container}>
-            <SecondComponent />
+        <SecondComponent/>
         </div>
     );
 };

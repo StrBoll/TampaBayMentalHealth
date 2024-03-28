@@ -1,7 +1,7 @@
 import React from 'react';
 import OverlayComponent from './OverLayComponent';
 import SecondSection from './SecondSectionInsurance';
-import SecondComponent from './InsuranceDropDown';
+
 
 const CheckInsurance = () => {
 
@@ -33,7 +33,8 @@ const CheckInsurance = () => {
         <div style={stylePicture.container}>
             <img src={require("./images/SmilingFinal.png")} alt="Description of the image" style={stylePicture.image} />
             <OverlayComponent />
-            <SecondSection />
+            <SecondSection/>
+            
             
             
 
