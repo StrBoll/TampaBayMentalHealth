@@ -1,6 +1,5 @@
 import React, { useState } from 'react';
-import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
+
 import './list.css'; 
 
 const SearchableList = ({ items }) => {
@@ -21,12 +20,15 @@ const SearchableList = ({ items }) => {
 
   // Inline styles for the toggle button
   const toggleButtonStyle = {
-    padding: '20px 150px', // Adjust padding as needed
+    padding: '10px', // Adjust padding as needed
+    paddingRight: '300px', // Adjust right padding as needed
     fontSize: '14px', // Increase font size for a larger button
-    borderRadius: '12px', // Increase border radius for a rounded button
+    borderRadius: '6px', // Increase border radius for a rounded button
+    border: '1px solid gray', // Set border to gray and reduce thickness
     width: isVisible ? '100%' : 'auto', // Make the button as wide as the container if visible
     textAlign: 'left', // Move the text to the left
     position: 'relative', // Position relative to the parent container
+    backgroundColor: '#FBFBFB',
   };
 
   // Inline styles for the drop-down arrow
@@ -34,7 +36,6 @@ const SearchableList = ({ items }) => {
     position: 'absolute',
     top: '50%',
     right: '10px', // Adjust the distance from the right side as needed
-    transform: 'translateY(-50%)', // Center vertically
     fontSize: '24px', // Adjust arrow size
     color: 'black', // Arrow color
   };
@@ -43,6 +44,7 @@ const SearchableList = ({ items }) => {
   const selectProviderStyle = {
     fontSize: '16px', // Set font size to 16px
     color: 'gray', // Set color to gray
+    marginBottom: '5px', // Add margin between lines
   };
 
   return (
@@ -67,7 +69,7 @@ const SearchableList = ({ items }) => {
         )}
         <button onClick={toggleVisibility} className="toggle-button" style={toggleButtonStyle}>
           Insurer<br />
-          <span style={selectProviderStyle}>Select Your Provider</span>
+          <span style={selectProviderStyle}>Find Your Provider</span>
           <i className="arrow down" style={dropdownArrowStyle}></i> {/* Down arrow */}
         </button>
       </div>
