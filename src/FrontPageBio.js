@@ -4,19 +4,39 @@ import Placeholder from './images/Placeholder.png';
 const Biography = () => {
     const styles = {
         container: {
-            backgroundColor: 'gray', // Background color for the section
+            backgroundColor: 'White', // Background color for the section
             width: '100%',
             minHeight: '1200px', // Set the minimum height of the section
             display: 'flex',
             flexDirection: 'column', // Align items vertically
-            justifyContent: 'center', // Center items horizontally
-            alignItems: 'center', // Center items vertically
+            alignItems: 'center', // Center items horizontally
             padding: '20px', // Add padding to space out the pictures
             boxSizing: 'border-box', // Include padding and border in the total width and height of the element
         },
         title: {
-            fontSize: '32px',
+            fontSize: '48px',
             marginBottom: '20px', // Add margin below the title
+            color: '#07538D',
+            fontFamily: 'Times New Roman',
+            marginTop: '0', // Place the title at the top of the container
+        },
+        picturesRow: {
+            position: 'relative', // Position the container relatively to place the vertical line
+            display: 'flex',
+            justifyContent: 'center',
+            gap: '260px', // Add gap between the pictures
+        },
+        verticalLine: {
+            position: 'absolute',
+            top: 0,
+            bottom: 0,
+            left: '50%', // Position the line in the middle horizontally
+            width: '1.5px',
+            backgroundColor: '#07538D', // Color of the vertical line
+            content: '""',
+        },
+        pictureContainer: {
+            textAlign: 'center', // Center the content horizontally within each picture container
         },
         picture: {
             width: '215px',
@@ -24,28 +44,45 @@ const Biography = () => {
             backgroundSize: 'cover', // Ensure the image covers the entire container
             backgroundPosition: 'center', // Center the background image
         },
-        picturesContainer: {
-            display: 'flex',
-            justifyContent: 'center',
-            gap: '20px', // Add gap between the images
+        caption: {
+            fontSize: '16px',
+            marginTop: '5px', // Add margin above each caption
+            color: '#666', // Dark gray color
         },
     };
 
-    // Array of picture URLs
-    const pictureUrls = [
-        Placeholder,
-        Placeholder,
-        Placeholder,
-        Placeholder,
+    // Array of picture URLs and captions
+    const pictures = [
+        { url: Placeholder, caption: 'Dr: Orlando L Ruano, DO' },
+        { url: Placeholder, caption: 'Dr: Joseph Grimaldi, PhD' },
+        { url: Placeholder, caption: 'APRN: Yanet Fernandez Diaz' },
+        { url: Placeholder, caption: 'APRN: Stefanny Molina Mesa' },
     ];
 
     return (
         <div style={styles.container}>
             <p style={styles.title}>Meet Our Team</p>
-            <div style={styles.picturesContainer}>
-                {pictureUrls.map((url, index) => (
-                    <div key={index} style={{ backgroundImage: `url(${url})`, ...styles.picture }} />
-                ))}
+            <div style={styles.picturesRow}>
+                <div style={styles.pictureContainer}>
+                    <div style={{ backgroundImage: `url(${pictures[0].url})`, ...styles.picture }} />
+                    <p style={styles.caption}>{pictures[0].caption}</p>
+                </div>
+                <div style={styles.pictureContainer}>
+                    <div style={styles.verticalLine}></div> {/* Vertical line */}
+                    <div style={{ backgroundImage: `url(${pictures[1].url})`, ...styles.picture }} />
+                    <p style={styles.caption}>{pictures[1].caption}</p>
+                </div>
+            </div>
+            <div style={styles.picturesRow}>
+                <div style={styles.pictureContainer}>
+                    <div style={{ backgroundImage: `url(${pictures[2].url})`, ...styles.picture }} />
+                    <p style={styles.caption}>{pictures[2].caption}</p>
+                </div>
+                <div style={styles.pictureContainer}>
+                    <div style={styles.verticalLine}></div> {/* Vertical line */}
+                    <div style={{ backgroundImage: `url(${pictures[3].url})`, ...styles.picture }} />
+                    <p style={styles.caption}>{pictures[3].caption}</p>
+                </div>
             </div>
         </div>
     );
