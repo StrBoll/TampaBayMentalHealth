@@ -9,6 +9,7 @@ import SearchableList from './list.js';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
 import image3 from './images/image3.jpg';
+import Biography from './FrontPageBio.js'
 import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
 import man from './images/man.jpg';
@@ -58,6 +59,7 @@ function App() {
                 </div>
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
+                  <Biography/>
                   
                 </div>
               </div>
