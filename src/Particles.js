@@ -59,9 +59,9 @@ const Particlebg = () => {
                     }, 
                     links: {
                         color: "#0d47a1",
-                        distance: 150,
+                        distance: 115,
                         enable: true,
-                        opacity: 0.5,
+                        opacity: 1,
                         width: 2,
                     },
                     move: {
@@ -71,7 +71,7 @@ const Particlebg = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 6,
+                        speed: 5,
                         straight: false,
                     },
                     number: {
@@ -79,7 +79,7 @@ const Particlebg = () => {
                             enable: true,
                             area: 800,
                         },
-                        value: 80,
+                        value: 85,
                     },
                     opacity: {
                         value: 0.5,
@@ -88,7 +88,7 @@ const Particlebg = () => {
                         type: "circle",
                     },
                     size: {
-                        value: { min: 2, max: 5 },
+                        value: { min: 2.5, max: 5 },
                     },
                 },
                 detectRetina: true,
