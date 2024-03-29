@@ -14,7 +14,7 @@ code {
 }
 .carousel {
   overflow: hidden;
-  width: 2000px;
+  width: 2500px;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -30,7 +30,7 @@ code {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  height: 600px;
+  height: 750px;
   background-color: #d8b578;
 }
 
@@ -42,11 +42,9 @@ code {
   color: #617d98;
 }
 .carousel-img {
-  width: 250px;
+  width: 350px;
   padding: 0 20px 0 20px;
 }
-
-
 
 .carousel-buttons {
   display: flex;
