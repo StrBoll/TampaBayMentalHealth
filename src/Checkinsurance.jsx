@@ -1,6 +1,7 @@
 import React from 'react';
 import OverlayComponent from './OverLayComponent';
 import SecondSection from './SecondSectionInsurance';
+import Bottom from './bottom';
 
 
 const CheckInsurance = () => {
@@ -34,6 +35,7 @@ const CheckInsurance = () => {
             <img src={require("./images/SmilingFinal.png")} alt="Description of the image" style={stylePicture.image} />
             <OverlayComponent />
             <SecondSection/>
+            <Bottom/>
             
             
             

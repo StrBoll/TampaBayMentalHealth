@@ -58,8 +58,7 @@ function App() {
                 </div>
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
-                  <h1>Searchable List</h1>
-                  <SearchableList items={items} />
+                  
                 </div>
               </div>
               <Bottom />
