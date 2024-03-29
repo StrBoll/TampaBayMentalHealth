@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Bottom = () => {
   return (
@@ -7,12 +8,14 @@ const Bottom = () => {
         <div style={styles.leftContent}>
           <p style={styles.title}>Contact Us</p>
           <div style={styles.buttonsContainer}>
-            <button style={styles.button}>Schedule an Appointment</button>
+          <Link to="/bookapt">
+              <button style={styles.button}>Schedule an Appointment</button>
+            </Link>
           </div>
           <p style={styles.text}>Phone: (813) 269-2920</p>
           <p style={styles.text}>Fax: (813) 269-2921</p>
           <p style={styles.text}>office@tampabaymentalhealth.net</p>
-    
+  
         </div>
         <div style={styles.mapContainer}>
           <div style={styles.grayBlock}>

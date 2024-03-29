@@ -18,9 +18,13 @@ function Navbar() {
         <div>
             <h>email</h>
             <h>phone number</h>
-        </div>
+        </div >
+        <div className="profbutton">
         <a href="/bookapt" class="book-appointment-btn">Book an appointment</a>
+        </div>
+        <div className="profbutton">
         <a href="/checkinsurance" class="checkinsurance-btn">Accepted insurance</a>
+        </div>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
         </button>
