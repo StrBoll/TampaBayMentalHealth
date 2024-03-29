@@ -1,5 +1,6 @@
 import React from 'react';
 import Placeholder from './images/Placeholder.png';
+import Card from './Card';
 
 const Biography = () => {
     const styles = {
@@ -63,25 +64,17 @@ const Biography = () => {
         <div style={styles.container}>
             <p style={styles.title}>Meet Our Team</p>
             <div style={styles.picturesRow}>
-                <div style={styles.pictureContainer}>
-                    <div style={{ backgroundImage: `url(${pictures[0].url})`, ...styles.picture }} />
-                    <p style={styles.caption}>{pictures[0].caption}</p>
-                </div>
+                <Card></Card>
                 <div style={styles.pictureContainer}>
                     <div style={styles.verticalLine}></div> {/* Vertical line */}
-                    <div style={{ backgroundImage: `url(${pictures[1].url})`, ...styles.picture }} />
-                    <p style={styles.caption}>{pictures[1].caption}</p>
+                    <Card></Card>
                 </div>
             </div>
             <div style={styles.picturesRow}>
-                <div style={styles.pictureContainer}>
-                    <div style={{ backgroundImage: `url(${pictures[2].url})`, ...styles.picture }} />
-                    <p style={styles.caption}>{pictures[2].caption}</p>
-                </div>
+            <Card></Card>
                 <div style={styles.pictureContainer}>
                     <div style={styles.verticalLine}></div> {/* Vertical line */}
-                    <div style={{ backgroundImage: `url(${pictures[3].url})`, ...styles.picture }} />
-                    <p style={styles.caption}>{pictures[3].caption}</p>
+                    <Card></Card>
                 </div>
             </div>
         </div>

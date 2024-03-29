@@ -13,6 +13,7 @@ import Biography from './FrontPageBio.js'
 import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
 import man from './images/man.jpg';
+import Card from './Card.jsx';
 import { Carousel } from "./Carousel";
 
 // Define your components...
