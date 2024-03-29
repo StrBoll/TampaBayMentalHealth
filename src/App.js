@@ -15,6 +15,10 @@ import Navbar from './navbar.js';
 import man from './images/man.jpg';
 import Card from './Card.jsx';
 import { Carousel } from "./Carousel";
+import Loc1 from './location1.jsx';
+import Loc2 from './location2.jsx';
+import Loc3 from './location3.jsx';
+
 
 // Define your components...
 
@@ -39,6 +43,9 @@ function App() {
         <Navbar />
         <Routes>
           <Route path="/bookapt" element={<Bookapt />} />
+          <Route path="/location1" element={<Loc1 />} />
+          <Route path="/location2" element={<Loc2 />} />
+          <Route path="/location3" element={<Loc3 />} />
           <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>

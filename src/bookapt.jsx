@@ -8,7 +8,9 @@ const Bookapt = () => {
 
   return (
     <div>
-    <h1>Pick a location to get started</h1>
+      <div className='htext'>
+    <h1 className='h'>Pick a location to get started</h1>
+    </div>
     <div className='container'> 
       <div className='upc'>
         <div className='gradient'></div>
