@@ -3,6 +3,8 @@ import './Locations.css'
 import Cal, { getCalApi } from "@calcom/embed-react";
 import { useEffect } from "react";
 import MyApp from './bookingcomp';
+import Particlebg from './Particles';
+import { Particle } from '@tsparticles/engine';
 const Loc1 = () => {
 
 
@@ -12,7 +14,7 @@ const Loc1 = () => {
             <h1 className='h'>Book an appointment!</h1>
         </div>
         <MyApp></MyApp>
-
+      <Particlebg></Particlebg>
 
     </div>
   );
