@@ -71,7 +71,7 @@ const Particlebg = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 5,
+                        speed: 2.5,
                         straight: false,
                     },
                     number: {
@@ -93,7 +93,9 @@ const Particlebg = () => {
                 },
                 detectRetina: true,
                 
-            }}
+                
+            }
+        }
             
         />
          </div>

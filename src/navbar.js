@@ -25,6 +25,9 @@ function Navbar() {
         <div className="profbutton">
         <a href="/checkinsurance" class="checkinsurance-btn">Accepted insurance</a>
         </div>
+        <div className="profbutton">
+        <a href="/treatments" class="Treatments">Treatments</a>
+        </div>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
             <FaTimes />
         </button>

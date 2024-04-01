@@ -1,10 +1,9 @@
 import React from 'react';
 import './Locations.css'
-import Cal, { getCalApi } from "@calcom/embed-react";
-import { useEffect } from "react";
+
 import MyApp from './bookingcomp';
 import Particlebg from './Particles';
-import { Particle } from '@tsparticles/engine';
+
 const Loc1 = () => {
 
 

@@ -18,7 +18,7 @@ import { Carousel } from "./Carousel";
 import Loc1 from './location1.jsx';
 import Loc2 from './location2.jsx';
 import Loc3 from './location3.jsx';
-
+import Treatment from './Treatments.js';
 
 // Define your components...
 
@@ -46,6 +46,7 @@ function App() {
           <Route path="/location1" element={<Loc1 />} />
           <Route path="/location2" element={<Loc2 />} />
           <Route path="/location3" element={<Loc3 />} />
+          <Route path="/treatments" element={<Treatment />} />
           <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>
