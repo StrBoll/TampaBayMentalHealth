@@ -2,6 +2,8 @@ import { useRef } from "react";
 import { FaBars, FaTimes } from "react-icons/fa";
 import "./main.css";
 import {Link} from "react-router-dom";
+import image4 from './images/image4.jpg';
+
 function Navbar() {
 	const navRef = useRef();
 
@@ -16,8 +18,8 @@ function Navbar() {
     <nav ref={navRef}>
     <a href="/" class="logo">Logo</a>
         <div>
-            <h>email</h>
-            <h>phone number</h>
+            <h>813 268-2920</h>
+            <h>office@tampabaymentalhealth.net</h>
         </div >
         <div className="profbutton">
         <a href="/bookapt" class="book-appointment-btn">Book an appointment</a>
