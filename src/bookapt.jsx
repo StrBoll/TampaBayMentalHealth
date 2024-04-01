@@ -1,7 +1,7 @@
 import React from 'react';
 import Bottom from './bottom';
 import Particlebg from './Particles';
-import Placeholder from './images/Placeholder.png';
+import Placeholder from './images/BETTERLOGO.png';
 import BlueGradientImage from './images/LinebaughOffice.jpeg'; // Import your first image
 import SecondImage from './images/officeWaters.png'; // Import your second image
 import './bookapt.css'
@@ -19,10 +19,9 @@ const Bookapt = () => {
             <img src={Placeholder} alt="placeholder"></img>
             <div className='profile-title'>Linebaugh Office</div>
             <div className='profile-description'>
-              Address phone number description
-            </div>
+Psychiatry Services, Psychology Services, TMS Brain Mapping            </div>
             <div className='profbutton'>
-              <a href="/location1">Choose location</a>
+              <a href="/location1">Schedule Now</a>
             </div>
           </div>
           <div className='mapContainer'>
@@ -46,10 +45,10 @@ const Bookapt = () => {
             <img src={Placeholder} alt="placeholder"></img>
             <div className='profile-title'>Waters Office</div>
             <div className='profile-description'>
-              Address phone number description
+              Group Therapy, Spanish Speakers Exclusive                                            
             </div>
             <div className='profbutton'>
-              <a href="/location2">Choose location</a>
+              <a href="/location2">Schedule Now</a>
             </div>
           </div>
           <div className='mapContainer'>

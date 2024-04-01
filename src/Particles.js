@@ -34,11 +34,11 @@ const Particlebg = () => {
                 interactivity: {
                     events: {
                         onClick: {
-                            enable: true,
+                            enable: false,
                             mode: "push",
                         },
                         onHover: {
-                            enable: true,
+                            enable: false,
                             mode: "repulse",
                         },
                         resize: true,
@@ -71,7 +71,7 @@ const Particlebg = () => {
                             default: "bounce",
                         },
                         random: false,
-                        speed: 2.5,
+                        speed: 1.5,
                         straight: false,
                     },
                     number: {

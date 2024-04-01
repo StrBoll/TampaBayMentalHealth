@@ -4,7 +4,7 @@
     margin: 20px;
     border-radius: 4px;
     padding-bottom: 30px;
-    background: rgba(225, 220, 220, 0.75); /* Changed background color to rgba to add transparency */
+    background: rgb(225, 220, 220); /* Solid background color */
 }
 
 .gradient {
@@ -29,6 +29,7 @@
 .profile-title {
     font-size: 35px;
     font-weight: 600;
+    font-family: 'goldenbook, serif';
 }
 
 .profile-description {
@@ -58,8 +59,6 @@ a {
 .mapContainer {
     height: 100px;
 }
-
-
 
 @media screen and (max-width: 600px) {
     .container {
