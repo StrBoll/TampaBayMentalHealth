@@ -18,7 +18,7 @@ const Biography = () => {
             fontSize: '48px',
             marginBottom: '20px', // Add margin below the title
             color: '#07538D',
-            fontFamily: 'Times New Roman',
+            fontFamily: 'goldenbook, serif',
             marginTop: '0', // Place the title at the top of the container
         },
         picturesRow: {

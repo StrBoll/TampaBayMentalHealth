@@ -26,7 +26,7 @@
 }
 
 .image-wrapper {
-  flex: 1; /* Make the image wrappers fill the available space */
+  flex: 1; /* Make the image wrappers fill the available spa ce */
   margin: 0 2px; /* Add margin to create spacing between images */
 }
 
