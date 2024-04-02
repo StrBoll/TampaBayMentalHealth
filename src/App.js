@@ -18,7 +18,7 @@ import { Carousel } from "./Carousel";
 import Loc1 from './location1.jsx';
 import Loc2 from './location2.jsx';
 
-import Treatment from './Treatments.js';
+import Treatment from './Treatments.jsx';
 
 // Define your components...
 
