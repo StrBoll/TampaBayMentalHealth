@@ -4,6 +4,7 @@ import SecondSection from './SecondSectionTreatment';
 import './Treatments.css';
 import Bottom from './bottom';
 import containerImage from './images/BrainswayExplanation.png'; // Import your container image
+import H1image from './images/H1.png';
 
 const Treatments = () => {
   const stylePicture = {
@@ -31,6 +32,14 @@ const Treatments = () => {
       maxWidth: '100%', // Ensure the image doesn't exceed the container width
       maxHeight: '100%', // Ensure the image doesn't exceed the container height
     },
+    H1: {
+      position: 'absolute', // Position the image absolutely within the container
+      top: '50%', // Position the image 50% from the top of the container
+      left: '50%', // Position the image 50% from the left of the container
+      transform: 'translate(-56%, -42%) scale(0.8)', // Center the image horizontally and vertically, and scale it to 50%
+      maxWidth: '100%', // Ensure the image doesn't exceed the container width
+      maxHeight: '100%', // Ensure the image doesn't exceed the container height
+    },
     button: {
       position: 'absolute',
       bottom: '20px', // Adjust as needed
@@ -52,6 +61,7 @@ const Treatments = () => {
       <BlueComponent />
       <div style={stylePicture.container}>
         <img src={containerImage} alt="Container" style={stylePicture.image} />
+        <img src={H1image} alt="H1Image" style={stylePicture.H1} />
       </div>
       <SecondSection /> {/* This second section is the white part */}
       <Bottom></Bottom>
