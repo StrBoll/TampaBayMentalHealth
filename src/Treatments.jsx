@@ -1,7 +1,8 @@
 import React from 'react';
 import BlueComponent from './BigBlue';
 import SecondSection from './SecondSectionTreatment';
-
+import './Treatments.css'
+import Bottom from './bottom';
 const Treatments = () => {
 
   const stylePicture = {
@@ -18,6 +19,7 @@ const Treatments = () => {
     container: {
       width: "100%",
       height: '1800px',
+      
     },
     image: {
       width: '100%',
@@ -39,7 +41,7 @@ const Treatments = () => {
   };
 
   return (
-    <div>
+    <div className="special-background">
       
       <BlueComponent />
       <div style={stylePicture.container}>
@@ -47,8 +49,8 @@ const Treatments = () => {
           BrainsWay Deep TMS Technology
         </h1>
       </div>
-      <SecondSection/>
-      
+      <SecondSection/> {/*This second section is the white part */}
+      <Bottom></Bottom>
     </div>
   );
 };
