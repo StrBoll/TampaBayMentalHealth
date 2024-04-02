@@ -1,17 +1,18 @@
 import React from 'react';
 import BlueComponent from './BigBlue';
 import SecondSection from './SecondSectionTreatment';
-import './Treatments.css'
+import './Treatments.css';
 import Bottom from './bottom';
-const Treatments = () => {
+import containerImage from './images/BrainswayExplanation.png'; // Import your container image
 
+const Treatments = () => {
   const stylePicture = {
     title: {
-      fontSize: '60px', 
-      color: 'white', 
-      textAlign: 'left', 
+      fontSize: '60px',
+      color: 'white',
+      textAlign: 'left',
       paddingTop: '30%',
-      paddingRight: '50%', 
+      paddingRight: '50%',
       fontFamily: 'Ubuntu, sans-serif', // Apply the Ubuntu font
       fontWeight: 700, // Ensure bold font weight
       fontStyle: 'normal', // Ensure normal font style
@@ -19,11 +20,16 @@ const Treatments = () => {
     container: {
       width: "100%",
       height: '1800px',
-      
+      overflow: 'hidden', // Ensure the image doesn't overflow the container
+      position: 'relative', // Position the container relative to its parent
     },
     image: {
-      width: '100%',
-      height: '100%',
+      position: 'absolute', // Position the image absolutely within the container
+      top: '50%', // Position the image 50% from the top of the container
+      left: '50%', // Position the image 50% from the left of the container
+      transform: 'translate(-105%, -130%) scale(0.8)', // Center the image horizontally and vertically, and scale it to 50%
+      maxWidth: '100%', // Ensure the image doesn't exceed the container width
+      maxHeight: '100%', // Ensure the image doesn't exceed the container height
     },
     button: {
       position: 'absolute',
@@ -38,18 +44,16 @@ const Treatments = () => {
       cursor: 'pointer',
       fontSize: '16px',
     },
+    
   };
 
   return (
     <div className="special-background">
-      
       <BlueComponent />
       <div style={stylePicture.container}>
-        <h1 style={stylePicture.title}>
-          BrainsWay Deep TMS Technology
-        </h1>
+        <img src={containerImage} alt="Container" style={stylePicture.image} />
       </div>
-      <SecondSection/> {/*This second section is the white part */}
+      <SecondSection /> {/* This second section is the white part */}
       <Bottom></Bottom>
     </div>
   );

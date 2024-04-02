@@ -1,3 +1,5 @@
+// SecondSection.js
+
 import React from 'react';
 
 const SecondSection = () => {
@@ -6,25 +8,23 @@ const SecondSection = () => {
             backgroundColor: '#F9F9F9', // Background color for the second section
             width: '100%',
             minHeight: '450px', // Set the minimum height of the second section
+            position: 'relative', // Ensure relative positioning
+            zIndex: 0 // Behind other content
         },
-        dropdown: {
-            maxHeight: '200px',
-            width: '20%',
-            margin: '0 auto', // Center the dropdown horizontally
-            overflowY: 'auto',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            padding: '5px',
-        },
-        item: {
-            padding: '5px',
-            cursor: 'pointer',
-        },
+        overlay: {
+            position: 'absolute', // Positioning the overlay absolutely
+            top: '50%', // Align the overlay to the middle vertically
+            left: 0, // Align the overlay to the left
+            width: '100%', // Full width
+            height: '50%', // Half of the height
+            backgroundColor: 'rgba(255, 255, 255, 0.5)', // Semi-transparent white background color
+            zIndex: 1 // Above the background color
+        }
     };
 
     return (
         <div style={styles.container}>
-        
+            <div style={styles.overlay}></div>
         </div>
     );
 };
