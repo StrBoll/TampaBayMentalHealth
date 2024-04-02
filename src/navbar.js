@@ -17,10 +17,7 @@ function Navbar() {
 		<header>
     <nav ref={navRef}>
     <a href="/" class="logo">Logo</a>
-        <div>
-            <h>813 268-2920</h>
-            <h>office@tampabaymentalhealth.net</h>
-        </div >
+        
         <div className="profbutton">
         <a href="/bookapt" class="book-appointment-btn">Book an appointment</a>
         </div>
