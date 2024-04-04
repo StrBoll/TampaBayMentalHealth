@@ -1,27 +1,15 @@
 {
-  "name": "newwebsite",
+  "name": "react-multilevel-dropdown-menu",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
-    "@calcom/embed-react": "^1.3.2",
-    "@fontsource/open-sans": "^5.0.27",
-    "@react-google-maps/api": "^2.19.3",
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
     "@testing-library/user-event": "^13.5.0",
-    "@tsparticles/engine": "^3.3.0",
-    "@tsparticles/react": "^3.0.0",
-    "create-react-app": "^5.0.1",
-    "dayschedule-widget": "^1.1.9",
-    "google-maps-api-react-map": "^1.1.3",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
-    "react-icons": "^5.0.1",
-    "react-router-dom": "^6.22.3",
-    "react-scripts": "^5.0.1",
-    "react-tsparticles": "^2.12.2",
-    "tsparticles": "^3.3.0",
-    "tsparticles-slim": "^2.12.0",
+    "react-multilevel-dropdown": "^4.0.0",
+    "react-scripts": "5.0.1",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
@@ -47,8 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "@babel/plugin-proposal-private-property-in-object": "^7.21.11"
   }
 }

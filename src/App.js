@@ -19,6 +19,7 @@ import Loc1 from './location1.jsx';
 import Loc2 from './location2.jsx';
 
 import Treatment from './Treatments.jsx';
+import Treatments1 from './Treatments1.jsx';
 
 // Define your components...
 
@@ -47,6 +48,7 @@ function App() {
           <Route path="/location2" element={<Loc2 />} />
           
           <Route path="/treatments" element={<Treatment />} />
+          <Route path="/treatments1" element={<Treatments1/>}/>
           <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>

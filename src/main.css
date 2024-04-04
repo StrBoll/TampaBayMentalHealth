@@ -1,17 +1,17 @@
-@import url(""https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;700&display=swap"");
+@import url("https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap");
 
 * {
-	padding: 0;
-	margin: 0;
-	box-sizing: border-box;
-	font-family: "Titillium Web", sans-serif;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Ubuntu", sans-serif; /* Change font to Ubuntu */
 }
 
 :root {
-	--mainColor: #29335c;
-	--mainColorLight: #5767aa;
-	--secondaryColor: #db2b39;
-	--textColor: #eee;
+    --mainColor: #ffffff;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #db2b39;
+    --textColor: #000000;
 }
 
 header {
@@ -19,88 +19,139 @@ header {
     top: 0;
     z-index: 1000;
     width: 100%;
-	display: flex;
-	align-items: center;
-	justify-content: space-between;
-	height: 80px;
-	padding: 0 2rem;
-	background-color: var(--mainColor);
-	color: var(--textColor);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+    padding: 0 2rem;
+    background-color: var(--mainColor);
+    color: var(--textColor);
 }
 
 nav a {
-	margin: 0 1rem;
-	color: var(--textColor);
-	text-decoration: none;
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
 }
 
 nav h {
-	margin: 0 1rem;
-	color: var(--textColor);
-	text-decoration: none;
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
 }
+
 nav a:hover {
-	color: var(--secondaryColor);
+    color: var(--secondaryColor);
 }
-.profbutton{
-    font-size: 15px;
-    background: #2b5dff;
-    margin: 10px 10px;
+
+.profbutton {
+    font-size: 17px;
+    background: transparent;
+    margin: auto 10px 10px 10px; /* Adjust margin to align buttons to the bottom */
     padding-top: 8px;
     padding-bottom: 10px;
     border-radius: 40px;
+    color: black !important;
+    line-height: 25px;
+    align-self: flex-end; /* Align buttons to the bottom */
 }
 
-header .nav-btn {
-	padding: 5px;
-	cursor: pointer;
+.dropdown-container {
+	position: relative;
+  }
+  
+  .dropdown-content {
+	position: absolute;
+	top: calc(100% + 5px); /* Adjust the value as needed */
+	left: 0;
+	display: none;
+  }
+  
+  .dropdown-container:hover .dropdown-content {
+	display: block;
+  }
+  
+  .more-button {
+	font-size: 17px;
 	background: transparent;
+	margin: auto 10px 10px 10px; /* Adjust margin to align buttons to the bottom */
+	padding-top: 8px;
+	padding-bottom: 10px;
+	border-radius: 40px;
+	color: black !important;
+	line-height: 25px;
+	align-self: flex-end; /* Align buttons to the bottom */
+  }
+  
+
+.phone-number-btn {
+	position: relative; /* Add relative positioning */
+	margin: auto 10px 14px 10px;
+	font-size: 17px;
+	padding: 8px 16px;
 	border: none;
-	outline: none;
+	border-radius: 20px;
+	background-color: rgb(190, 190, 190) ;
 	color: var(--textColor);
-	visibility: hidden;
-	opacity: 0;
-	font-size: 1.8rem;
+	cursor: pointer;
+	transition: background-color 0.3s;
+  }
+  
+  .phone-number-btn:hover {
+	background-color: #ddd; /* Change the background color on hover as desired */
+  }
+  
+header .nav-btn {
+    padding: 5px;
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: var(--textColor);
+    visibility: hidden;
+    opacity: 0;
+    font-size: 1.8rem;
 }
+
 
 header div,
 nav {
-	display: flex;
-	align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 @media only screen and (max-width: 1024px) {
-	header .nav-btn {
-		visibility: visible;
-		opacity: 1;
-	}
+    header .nav-btn {
+        visibility: visible;
+        opacity: 1;
+    }
 
-	header nav {
-		position: fixed;
-		top: -100vh;
-		left: 0;
-		height: 100%;
-		width: 100%;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		justify-content: center;
-		gap: 1.5rem;
-		background-color: var(--mainColor);
-		transition: 1s;
-	}
+    header nav {
+        position: fixed;
+        top: -100vh;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1.5rem;
+        background-color: var(--mainColor);
+        transition: 1s;
+    }
 
-	header .responsive_nav {
-		transform: translateY(100vh);
-	}
+    header .responsive_nav {
+        transform: translateY(100vh);
+    }
 
-	nav .nav-close-btn {
-		position: absolute;
-		top: 2rem;
-		right: 2rem;
-	}
+    nav .nav-close-btn {
+        position: absolute;
+        top: 2rem;
+        right: 2rem;
+    }
 
-	nav a {
-		font-size: 1.5rem;
-	}
+    nav a {
+        font-size: 1.5rem;
+    }
 }
