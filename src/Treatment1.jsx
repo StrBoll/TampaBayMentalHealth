@@ -6,7 +6,7 @@ import Bottom from './bottom';
 import containerImage from './images/BrainswayExplanation.png'; // Import your container image
 import H1image from './images/H1.png';
 
-const Treatments1 = () => {
+const Treatment1 = () => {
   const stylePicture = {
     title: {
       fontSize: '60px',
@@ -69,4 +69,4 @@ const Treatments1 = () => {
   );
 };
 
-export default Treatments1;
+export default Treatment1;
