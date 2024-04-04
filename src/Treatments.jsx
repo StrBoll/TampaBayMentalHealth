@@ -63,7 +63,6 @@ const Treatments = () => {
         <img src={containerImage} alt="Container" style={stylePicture.image} />
         <img src={H1image} alt="H1Image" style={stylePicture.H1} />
       </div>
-      <SecondSection /> {/* This second section is the white part */}
       <Bottom></Bottom>
     </div>
   );
