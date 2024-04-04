@@ -20,10 +20,11 @@ const Bookapt = () => {
             <div className='profile-title'>Linebaugh Office</div>
             <div className='profile-description'>
 Psychiatry Services, Psychology Services, TMS Brain Mapping            </div>
-            <div className='profbutton'>
+            
+          </div>
+          <div className='profbutton'>
               <a href="/location1">Schedule Now</a>
             </div>
-          </div>
           <div className='mapContainer'>
             <iframe
               title="Google Map"

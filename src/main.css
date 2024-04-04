@@ -40,13 +40,11 @@ nav h {
     text-decoration: none;
 }
 
-nav a:hover {
-    color: var(--secondaryColor);
-}
+
 
 .profbutton {
     font-size: 17px;
-    background: transparent;
+    background: #e3e0e0;
     margin: auto 10px 10px 10px; /* Adjust margin to align buttons to the bottom */
     padding-top: 8px;
     padding-bottom: 10px;
