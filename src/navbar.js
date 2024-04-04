@@ -36,16 +36,19 @@ function Navbar() {
         </div>
         <div className="profbutton" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
           <a href="/treatments" className="Treatments">
-            Treatments <FaChevronDown style={{ verticalAlign: "middle", marginBottom: "1px", fontWeight: 250, fontSize: "0.6em" }} /> {/* Adjusted size */}
+            Treatments  {/* Adjusted size */}
           </a>
           
-          {dropdownVisible && (
-            <div ref={dropdownRef} className="dropdown-content">
-              <Link to="/treatment1">TMS Brain Mapping</Link>
-              <Link to="/treatment2">Group Therapy</Link>
-              <Link to="/treatment3">Adult Psychiatry</Link>
-            </div>
-          )}
+          <div class="dropdown">
+              <button class="dropbtn"><FaChevronDown style={{ verticalAlign: "middle", marginBottom: "1px", fontWeight: 250, fontSize: "0.6em" }} />
+                <i class="fa fa-caret-down"></i>
+              </button>
+              <div class="dropdown-content">
+                <a href="/treatment1" className="Treatments">Link 1</a>
+                <a href="/treatment2" className="Treatments">Link 2</a>
+                <a href="/treatment3" className="Treatments">Link 3</a>
+              </div>
+          </div>
           
         </div>
         <a href="tel:8132692920" className="phone-number-btn">Call Us: (813) 269-2920</a>
