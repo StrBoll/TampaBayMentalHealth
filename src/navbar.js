@@ -24,29 +24,29 @@ function Navbar() {
           <img src={logoImage} alt="Logo" style={{ width: "150px", height: "auto" }} />
         </a>
 
-        <div className="profbutton">
+        <div className="more-button"> {/* Changed class name */}
           <a href="/bookapt" className="book-appointment-btn">
             Book an appointment
           </a>
         </div>
-        <div className="profbutton">
+        <div className="more-button"> {/* Changed class name */}
           <a href="/checkinsurance" className="checkinsurance-btn">
             Accepted insurance
           </a>
-        </div>
-        <div className="profbutton" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
-          <a href="/treatments" className="Treatments">
-            Treatments  {/* Adjusted size */}
-          </a>
+        
           
           <div class="dropdown">
               <button class="dropbtn"><FaChevronDown style={{ verticalAlign: "middle", marginBottom: "1px", fontWeight: 250, fontSize: "0.6em" }} />
+              <div className="more-button" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}> {/* Changed class name */}
+                <a href="/treatments" className="Treatments">
+                Treatments
+          </a>
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
-                <a href="/treatment1" className="Treatments">Link 1</a>
-                <a href="/treatment2" className="Treatments">Link 2</a>
-                <a href="/treatment3" className="Treatments">Link 3</a>
+                <a href="/treatment1" className="Treatments">TMS Brain Mapping</a>
+                <a href="/treatment2" className="Treatments">Adult Psychiatry</a>
+                <a href="/treatment3" className="Treatments">Group Therapy</a>
               </div>
           </div>
           
