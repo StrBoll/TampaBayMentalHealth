@@ -33,14 +33,14 @@ function Navbar() {
           <a href="/checkinsurance" className="checkinsurance-btn">
             Accepted insurance
           </a>
-        
+        </div>
+        <div className="more-button" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}> {/* Changed class name */}
+          <a href="/treatments" className="Treatments">
+            Treatments
+          </a>
           
           <div class="dropdown">
               <button class="dropbtn"><FaChevronDown style={{ verticalAlign: "middle", marginBottom: "1px", fontWeight: 250, fontSize: "0.6em" }} />
-              <div className="more-button" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}> {/* Changed class name */}
-                <a href="/treatments" className="Treatments">
-                Treatments
-          </a>
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
