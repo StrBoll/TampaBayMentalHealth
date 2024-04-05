@@ -5,8 +5,16 @@ import './Treatments.css';
 import Bottom from './bottom';
 import containerImage from './images/BrainswayExplanation.png'; // Import your container image
 import H1image from './images/H1.png';
+import YouTube from 'react-youtube';
 
 const Treatment1 = () => {
+  const videoId = 'mjA6oQdLr9U';
+  const opts = {
+    playerVars: {
+      autoplay: 0, // Autoplay disabled
+      origin: window.location.origin, // Set the origin to your website
+    },
+  };
   const stylePicture = {
     title: {
       fontSize: '60px',
@@ -63,9 +71,19 @@ const Treatment1 = () => {
         <img src={containerImage} alt="Container" style={stylePicture.image} />
         <img src={H1image} alt="H1Image" style={stylePicture.H1} />
       </div>
-      <SecondSection /> {/* This second section is the white part */}
+     
+    <iframe
+        width="560"
+        height="315"
+        src={`https://www.youtube.com/embed/mjA6oQdLr9U`}
+        frameborder="0"
+        
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
       <Bottom></Bottom>
-    </div>
+      </div>
+  
   );
 };
 
