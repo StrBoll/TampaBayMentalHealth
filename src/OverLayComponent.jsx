@@ -55,11 +55,18 @@ const OverlayComponent = () => {
         },
     };
 
+    const scrollToBottom = () => {
+        window.scrollTo({
+            top: document.documentElement.scrollHeight,
+            behavior: 'smooth'
+        });
+    };
+
     return (
         <div style={styles.overlay}>
             <div>
                 <p style={styles.text}>Insurance Accepted</p>
-                <button style={styles.button}>See more..</button>
+                <button style={styles.button} onClick={scrollToBottom}>See more..</button>
             </div>
             <img src={require('./images/logoCollage1.png')} alt="Description of the image" style={styles.image} />
             <p style={styles.disclaimer}>Disclaimer: Understanding Insurance Coverage for Psychiatry Services</p>

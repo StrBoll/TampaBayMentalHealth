@@ -5,7 +5,7 @@ import Bottom from './bottom';
 
 
 const CheckInsurance = () => {
-
+    
     const stylePicture = {
         container: {
             backgroundColor: '#F9F9F9',
