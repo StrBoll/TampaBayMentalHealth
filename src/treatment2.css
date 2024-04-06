@@ -1,0 +1,22 @@
+.banner-container {
+    width: 100%; /* Set the width to occupy full width */
+    height: 300px; /* Set the height of the banner */
+  }
+  
+  .banner {
+    width: 100%; /* Occupy full width */
+    height: 100%; /* Occupy full height */
+    background-size: cover; /* Ensure the background image covers the entire container */
+    background-position: center; /* Center the background image */
+    text-align: center; /* Center align the text */
+    display: flex; /* Use flexbox to center content vertically */
+    justify-content: center; /* Center content horizontally */
+    align-items: center; /* Center content vertically */
+  }
+  
+  .banner-text {
+    color: white; /* Set the text color */
+    font-size: 32px; /* Set the font size */
+    font-weight: bold; /* Set font weight to bold */
+  }
+  
