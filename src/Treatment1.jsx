@@ -116,9 +116,9 @@ const Treatment1 = () => {
         ></iframe>
       </div>
       <div style={stylePicture.whiteComponent}>
-        <span style={stylePicture.firstLine}>Facts about TMS</span><br/><br/>
+        <span style={stylePicture.firstLine}>Our Treatment:</span><br/><br/>
         <hr style={{ borderTop: '1px solid #DCDCDC', marginBottom: '20px' }} />
-        <FontAwesomeIcon icon={faCircleCheck} style={{ marginRight: '5px', color: '#8FCBFF' }} /> FDA-cleared treatments<br/><br/>
+        <FontAwesomeIcon icon={faCircleCheck} style={{ marginRight: '5px', color: '#8FCBFF' }} /> FDA-cleared <br/><br/>
         <FontAwesomeIcon icon={faCircleCheck} style={{ marginRight: '5px', color: '#8FCBFF' }} /> Effective for medication-resistant patients<br/><br/>
         <FontAwesomeIcon icon={faCircleCheck} style={{ marginRight: '5px', color: '#8FCBFF' }} /> Short 20-minute sessions<br/><br/>
         <FontAwesomeIcon icon={faCircleCheck} style={{ marginRight: '5px', color: '#8FCBFF' }} /> Noninvasive<br/><br/>
