@@ -38,9 +38,9 @@ function Navbar() {
          
           
           <div class="dropdown">
-              <button class="dropbtn">  <a href="/treatments" className="Treatments">
+              <button class="dropbtn"> 
             Treatments <FaChevronDown style={{ verticalAlign: "middle", marginBottom: "1px", fontWeight: 250, fontSize: "0.6em" }} />
-          </a>
+          
                 <i class="fa fa-caret-down"></i>
               </button>
               <div class="dropdown-content">
