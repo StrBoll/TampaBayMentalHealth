@@ -58,7 +58,7 @@ function App() {
                 <img src={bannerImage} alt="Banner" className="banner-image" />
                 <div className="banner-text">Tampa Bay Mental Health</div>
                 <div className={showSlogan ? "slogan show" : "slogan"}>
-                  <span>Embrace a Healthy You</span>
+                  <span>Reliable, Affordable, Help.</span>
                   <span className="cursor"></span>
                 </div>
               </div>
