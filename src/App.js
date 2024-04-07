@@ -49,6 +49,7 @@ function App() {
           <Route path="/location2" element={<Loc2 />} />
           <Route path="/treatments" element={<Treatment />} />
           <Route path="/treatment1" element={<Treatments1/>}/>
+          <Route path="/Meet" element={<Biography/>}/>
           <Route path="/treatment2" element={<Treatment2/>}/>
           <Route path="/treatment3" element={<Treatment3/>}/>
           <Route path="/checkinsurance" element={<Checkinsurance />} />
@@ -80,7 +81,9 @@ function App() {
                 </div>
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
-                  <Biography/>
+                  <div id="meet-our-team">
+                  <Biography />
+                </div>
                 </div>
               </div>
               <Bottom />
