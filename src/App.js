@@ -1,4 +1,6 @@
-import React from 'react';
+// Inside your App.js file
+
+import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
 import Header from './Header';
@@ -9,7 +11,8 @@ import SearchableList from './list.js';
 import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
 import image3 from './images/image3.jpg';
-import Biography from './FrontPageBio.js'
+import './skyline.css';
+import Biography from './FrontPageBio.js';
 import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
 import man from './images/man.jpg';
@@ -20,38 +23,45 @@ import Loc2 from './location2.jsx';
 
 import Treatment from './Treatments.jsx';
 import Treatments1 from './Treatment1.jsx';
-
-// Define your components...
+import Treatment2 from './treatment2.jsx';
+import Treatment3 from './treatment3.jsx';
+import bannerImage from './images/skylineFinal.jpeg';
 
 function App() {
-  const position = {lat: 61.2176, lng: -149.8997};
-  const items = [
-    'Apple',
-    'Banana',
-    'Cherry',
-    'Date',
-    'Elderberry',
-    'Fig',
-    'Grape',
-    'Kiwi',
-    'Lemon',
-    'Mango',
-  ];
+  const [showSlogan, setShowSlogan] = useState(false);
+
+  useEffect(() => {
+    // Set showSlogan state to true after a delay
+    const timer = setTimeout(() => {
+      setShowSlogan(true);
+    }, 1000); // Adjust the delay as needed (1000 milliseconds = 1 second)
+    
+    return () => clearTimeout(timer); // Cleanup function to clear the timer
+  }, []);
 
   return (
     <div className="App">
-    <Router>
+      <Router>
         <Navbar />
         <Routes>
           <Route path="/bookapt" element={<Bookapt />} />
           <Route path="/location1" element={<Loc1 />} />
           <Route path="/location2" element={<Loc2 />} />
-          
           <Route path="/treatments" element={<Treatment />} />
           <Route path="/treatment1" element={<Treatments1/>}/>
+          <Route path="/treatment2" element={<Treatment2/>}/>
+          <Route path="/treatment3" element={<Treatment3/>}/>
           <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>
+              <div className="banner-container">
+                <img src={bannerImage} alt="Banner" className="banner-image" />
+                <div className="banner-text">Tampa Bay Mental Health</div>
+                <div className={showSlogan ? "slogan show" : "slogan"}>
+                  <span>Embrace a Healthy You</span>
+                  <span className="cursor"></span>
+                </div>
+              </div>
               <div>
                 <Carousel />
               </div>
@@ -71,18 +81,15 @@ function App() {
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
                   <Biography/>
-                  
                 </div>
               </div>
               <Bottom />
             </React.Fragment>
           } />
         </Routes>
-    </Router>
+      </Router>
     </div>
   );
 }
 
 export default App;
-
-

@@ -6,7 +6,7 @@ const SecondSection = () => {
         container: {
             backgroundColor: '#F9F9F9', // Background color for the second section
             width: '100%',
-            minHeight: '450px', // Set the minimum height of the second section
+            minHeight: '350 px', // Set the minimum height of the second section
         },
         dropdown: {
             maxHeight: '200px',

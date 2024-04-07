@@ -35,3 +35,54 @@
   height: auto;
 }
 
+/* Inside your App.css file */
+
+.banner-container {
+  position: relative; /* Ensure the banner text is positioned relative to the container */
+}
+
+.banner-text {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 25%; /* Align the text vertically at 50% from the top */
+  left: 50%; /* Align the text horizontally at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the text precisely */
+  color: white; /* Set the text color */
+  font-size: 4vw; /* Set the font size relative to the viewport width */
+  
+  text-align: center; /* Center align the text */
+  
+}
+
+/* Inside your App.css file */
+/* Inside your App.css file */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.slogan {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2.5vw;
+  text-align: center;
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+  animation: typing 6s steps(80, end);
+}
+
+.slogan.show {
+  opacity: 1;
+}
+
+/* Rest of your CSS remains the same */
+
+

@@ -1,7 +1,7 @@
 import React from 'react';
-import psychiatryImage from './images/Psychiatry.png'; // Import your PNG image
+import psychiatryImage from './images/Group.png'; // Import your PNG image
 
-const Treatment2 = () => {
+const Treatment3 = () => {
   return (
     <div className="banner-container">
       {/* Use the image directly */}
@@ -13,4 +13,4 @@ const Treatment2 = () => {
   );
 };
 
-export default Treatment2;
+export default Treatment3;
