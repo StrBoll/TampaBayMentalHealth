@@ -12,7 +12,6 @@ import image1 from './images/image1.jpg';
 import image2 from './images/image2.jpg';
 import image3 from './images/image3.jpg';
 import './skyline.css';
-import Biography from './FrontPageBio.js';
 import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
 import man from './images/man.jpg';
@@ -27,6 +26,7 @@ import Treatment3 from './treatment3.jsx';
 import bannerImage from './images/skylineFinal.jpeg';
 import { countries } from './newcarousel.js';
 import TeamSection from './Teamsec.js';
+import Bio from './Bio.jsx';
 function App() {
   const [showSlogan, setShowSlogan] = useState(false);
 
@@ -50,7 +50,7 @@ function App() {
           <Route path="/location2" element={<Loc2 />} />
           <Route path="/treatments" element={<Treatment />} />
           <Route path="/treatment1" element={<Treatments1/>}/>
-          <Route path="/Meet" element={<TeamSection/>}/>
+          <Route path="/Meet" element={<Bio/>}/>
           <Route path="/treatment2" element={<Treatment2/>}/>
           <Route path="/treatment3" element={<Treatment3/>}/>
           <Route path="/checkinsurance" element={<Checkinsurance />} />
