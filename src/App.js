@@ -17,7 +17,7 @@ import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
 import man from './images/man.jpg';
 import Card from './Card.jsx';
-import { Carousel } from "./Carousel";
+import Carousel from './Carousel.js';
 import Loc1 from './location1.jsx';
 import Loc2 from './location2.jsx';
 
@@ -26,7 +26,7 @@ import Treatments1 from './Treatment1.jsx';
 import Treatment2 from './treatment2.jsx';
 import Treatment3 from './treatment3.jsx';
 import bannerImage from './images/skylineFinal.jpeg';
-
+import { countries } from './newcarousel.js';
 function App() {
   const [showSlogan, setShowSlogan] = useState(false);
 
@@ -43,6 +43,7 @@ function App() {
     <div className="App">
       <Router>
         <Navbar />
+        
         <Routes>
           <Route path="/bookapt" element={<Bookapt />} />
           <Route path="/location1" element={<Loc1 />} />
@@ -63,9 +64,8 @@ function App() {
                   <span className="cursor"></span>
                 </div>
               </div>
-              <div>
-                <Carousel />
-              </div>
+              <Carousel images={countries}/>  
+              
               <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13OSFSfuM3OZS3KLvxp50F2IhOqrkMv0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
               <div className="content">
                 <div className="image-container">

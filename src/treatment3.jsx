@@ -9,6 +9,7 @@ const Treatment3 = () => {
         <img src={psychiatryImage} alt="Psychiatry Banner" style={{ width: '100%', height: 'auto' }} />
         {/* You can add content or text inside the banner if needed */}
       </div>
+      
     </div>
   );
 };
