@@ -1,14 +1,15 @@
 import React from 'react';
-import psychiatryImage from './images/Group.png'; // Import your PNG image
+import BrainswayVideo from './Media/BrainswayVideo.mp4'; // Import your video file
+import './Treatment3.css'; // Import CSS file for styling
 
 const Treatment3 = () => {
   return (
-    <div className="banner-container">
-      {/* Use the image directly */}
-      <div className="banner">
-        <img src={psychiatryImage} alt="Psychiatry Banner" style={{ width: '100%', height: 'auto' }} />
-        {/* You can add content or text inside the banner if needed */}
-      </div>
+    <div className="video-container">
+      <h1 className="video-text">Discover Brainsway Deep TMS</h1>
+      <video autoPlay loop muted className="fullscreen-video">
+        <source src={BrainswayVideo} type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
     </div>
   );
 };
