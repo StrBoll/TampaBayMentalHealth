@@ -20,13 +20,13 @@ import Card from './Card.jsx';
 import Carousel from './Carousel.js';
 import Loc1 from './location1.jsx';
 import Loc2 from './location2.jsx';
-
 import Treatment from './Treatments.jsx';
 import Treatments1 from './Treatment1.jsx';
 import Treatment2 from './treatment2.jsx';
 import Treatment3 from './treatment3.jsx';
 import bannerImage from './images/skylineFinal.jpeg';
 import { countries } from './newcarousel.js';
+import TeamSection from './Teamsec.js';
 function App() {
   const [showSlogan, setShowSlogan] = useState(false);
 
@@ -50,7 +50,7 @@ function App() {
           <Route path="/location2" element={<Loc2 />} />
           <Route path="/treatments" element={<Treatment />} />
           <Route path="/treatment1" element={<Treatments1/>}/>
-          <Route path="/Meet" element={<Biography/>}/>
+          <Route path="/Meet" element={<TeamSection/>}/>
           <Route path="/treatment2" element={<Treatment2/>}/>
           <Route path="/treatment3" element={<Treatment3/>}/>
           <Route path="/checkinsurance" element={<Checkinsurance />} />
@@ -64,8 +64,8 @@ function App() {
                   <span className="cursor"></span>
                 </div>
               </div>
-              <Carousel images={countries}/>  
-              
+              <TeamSection/>
+              <Carousel images={countries}/>   
               <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13OSFSfuM3OZS3KLvxp50F2IhOqrkMv0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
               <div className="content">
                 <div className="image-container">
@@ -81,9 +81,7 @@ function App() {
                 </div>
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
-                  <div id="meet-our-team">
-                  <Biography />
-                </div>
+                 
                 </div>
               </div>
               <Bottom />
