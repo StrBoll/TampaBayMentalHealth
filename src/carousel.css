@@ -60,7 +60,7 @@
   font-size: 40px;
   top: 50%;
   transform: translate(0, -50%);
-  background-color: rgb(222, 26, 26);
+  background-color: rgb(255, 255, 255);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -89,7 +89,7 @@
 .pagination_dot {
   height: 10px;
   width: 10px;
-  background-color: rgb(130, 25, 25);
+  background-color: rgb(255, 255, 255);
   border-radius: 50%;
   display: inline-block;
   margin-left: 10px;
@@ -101,5 +101,5 @@
 }
 
 .pagination_dot-active {
-  background-color: rgb(255, 55, 0);
+  background-color: rgb(0, 0, 0);
 }

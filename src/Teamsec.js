@@ -2,7 +2,19 @@ import React from 'react';
 import './team.css'
 
 const TeamSection = () => {
+    const styles = {
+    
+        title: {
+            fontSize: '48px',
+            marginBottom: '20px', // Add margin below the title
+            color: '#07538D',
+            fontFamily: 'goldenbook, serif',
+            marginTop: '0', // Place the title at the top of the container
+        },
+    }
     return (
+        <div className="tee">
+        <p style={styles.title}>Meet Our Team</p>
         <div className="wrapper">
             
             <div className="card_Container">
@@ -28,6 +40,7 @@ const TeamSection = () => {
                     imageSrc="./bannerCarousel.jpeg"
                 />
             </div>
+        </div>
         </div>
 
     );

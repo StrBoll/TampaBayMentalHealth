@@ -11,6 +11,10 @@
   /* COLORS */
   --color: #9176FF;
   --bg-color: #ffffff;
+  
+}
+.tee{
+    margin-top: 5em;
 }
 
 /* Team section styles */
@@ -19,8 +23,10 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 50vh;
   background-color: var(--bg-color);
+  margin-top: 2em;
+
   z-index: 3;
 }
 
@@ -33,8 +39,7 @@
 
 .card {
   width: 20em;
-  /* Remove fixed height */
-  /* height: 90%; */
+  height: 90%;
   background-color: #fff;
   border-radius: 2em;
   box-shadow: 0 0 2em rgba(0, 0, 0, .2);
@@ -96,3 +101,4 @@
 .card .content .sci li a:hover {
   color: #555;
 }
+
