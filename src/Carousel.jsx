@@ -6,9 +6,8 @@ export const Carousel = () => {
   const [activeIndex, setActiveIndex] = useState(0);
   const items = [
     {
-      title: "Sample1",
-      description: "Sample text1 ajdhieqwbfdjk",
-      icon: require("./Media/example1.svg"),
+      
+      icon: require("./images/bannerCarousel.png"),
     },
     {
       title: "Sample2",
