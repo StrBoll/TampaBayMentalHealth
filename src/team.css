@@ -26,10 +26,16 @@
   height: 50vh;
   background-color: var(--bg-color);
   margin-top: 2em;
-
+  transition: background-color 0.3s ease; 
   z-index: 3;
+  border-radius: 2em;
+  margin-bottom: 2em;
 }
 
+
+.wrapper:hover {
+  background-color: rgba(0, 0, 0, 0.1); /* Darken the background color on hover */
+}
 .card_Container {
   display: flex;
   justify-content: center;

@@ -1,6 +1,7 @@
 import React from 'react';
 import './Locations.css'
-
+import MyApp from './bookingcomp';
+import Particlebg from './Particles';
 const Loc2 = () => {
   return (
     <div>
@@ -8,6 +9,8 @@ const Loc2 = () => {
             <h1 className='h'>Book an appointment!</h1>
         </div>
 
+        <MyApp></MyApp>
+      <Particlebg></Particlebg>
 
 
 

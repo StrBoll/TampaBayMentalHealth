@@ -1,6 +1,6 @@
 import React from 'react';
 import './team.css';
-
+import { Link } from "react-router-dom"; // Import Link component
 const TeamSection = () => {
     const styles = {
         title: {
@@ -15,7 +15,7 @@ const TeamSection = () => {
     return (
         <div className="tee">
             <p style={styles.title}>Meet Our Team</p>
-            <div className="wrapper">
+            <Link to="/meet" className="wrapper">
                 <div className="card_Container">
                     <TeamMember
                         name="APRN Yanet Fernandez Diaz"
@@ -38,7 +38,7 @@ const TeamSection = () => {
                         imageSrc="./Grimaldi.jpg"
                     />
                 </div>
-            </div>
+                </Link>
         </div>
     );
 };
