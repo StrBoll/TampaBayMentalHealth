@@ -1,55 +1,46 @@
 .upc {
-    width: 350px;
-    height: 700px;
+    width: 250px; /* Initial width of the card */
+    height: 500px; /* Initial height of the card */
     margin: 20px;
     border-radius: 4px;
-    padding-bottom: 30px;
+    padding-bottom: 20px; /* Padding at the bottom */
     background: rgb(225, 220, 220); /* Solid background color */
 }
 
 .gradient {
-    background: linear-gradient(to bottom, rgba(225, 220, 220, 0.75), rgba(225, 220, 220, 0)); /* Gradient from semi-transparent to fully transparent */
-    height: 200px;
-}
-
-.gradient .gradient-image {
-    width: 100%;
-    height: auto;
+    background: linear-gradient(to bottom, rgba(225, 220, 220, 0.75), rgba(225, 220, 220, 0)); /* Gradient */
+    height: 30%; /* Height of the gradient div */
 }
 
 .profile-down img {
-    height: 110px;
-border-radius: 40px;
-    margin-top: -75px;
+    height: 80px; /* Height of the profile image */
+    border-radius: 20px; /* Border radius for the profile image */
+    margin-top: -50px; /* Margin top for the profile image */
     padding: 5px;
     background: rgba(201, 80, 80, 0.5);
 }
 
 .profile-title {
-    font-size: 35px;
+    font-size: 25px; /* Font size of the title */
     font-weight: 600;
     font-family: 'goldenbook, serif';
 }
 
 .profile-description {
-    padding: 20px 40px;
-    font-size: 15px;
+    padding: 10px 20px; /* Padding */
+    font-size: 13px; /* Font size of the description */
 }
 
 .profbutton {
   display: inline-block;
   border: 2px solid #f77070; /* Border color */
   border-radius: 5px; /* Rounded corners */
-  padding: 10px 20px; /* Padding */
+  padding: 5px 10px; /* Padding for the button */
 }
+
 .profbutton:hover {
     background-color: #f77070; /* Darker background color on hover */
     border-color: #f77070; /* Darker border color on hover */
-  }
-
-a {
-    text-decoration: none;
-    color: rgb(0, 0, 0);
 }
 
 .container {
@@ -58,16 +49,13 @@ a {
 }
 
 .mapContainer {
-    height: 100px;
+    height: 80px; /* Height of the map container */
 }
 
 @media screen and (max-width: 600px) {
-    .container {
-        flex-direction: column;
-    }
     .upc {
-        width: 100%;
-        height: auto;
-        margin: 20px 0;
+        width: 100%; /* Set the width of the card to 100% on smaller screens */
+        height: auto; /* Allow the height to adjust automatically */
+        max-width: 300px; /* Limit maximum width on smaller screens */
     }
 }

@@ -1,7 +1,8 @@
 import React from 'react';
 import TeamSection from './Teamsec';
-
+import './Meet.css'
 const Meet = () => {
+  
   const styles = {
     container: {
         backgroundColor: 'White', // Background color for the section
@@ -49,9 +50,12 @@ const Meet = () => {
         marginTop: '5px', // Add margin above each caption
         color: '#666', // Dark gray color
     },
+    
+    
 };
+
   return (
-    <div>
+    <div className='t'>
       <p style={styles.title}>Meet Our Team</p>
     <TeamSection/>
     </div>

@@ -49,3 +49,10 @@ a {
     display: flex;
     justify-content: space-between; /* Adjust as needed */
 }
+@media screen and (max-width: 900px) {
+    .container {
+        flex-direction: column; /* Stack items vertically on small screens */
+        align-items: center; /* Center items horizontally */
+    }
+    
+}
