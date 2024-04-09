@@ -1,5 +1,3 @@
-// Inside your App.js file
-
 import React, { useEffect, useState } from 'react';
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 import './App.css';
@@ -27,8 +25,11 @@ import bannerImage from './images/skylineFinal.jpeg';
 import { countries } from './newcarousel.js';
 import TeamSection from './Teamsec.js';
 import Bio from './Bio.jsx';
+import MobilePopup from './mobilepopup.js'; 
+
 function App() {
   const [showSlogan, setShowSlogan] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
   useEffect(() => {
     // Set showSlogan state to true after a delay
@@ -36,7 +37,17 @@ function App() {
       setShowSlogan(true);
     }, 1000); // Adjust the delay as needed (1000 milliseconds = 1 second)
     
-    return () => clearTimeout(timer); // Cleanup function to clear the timer
+    // Check if the user is on a mobile device
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768); // Adjust the width threshold as needed
+    };
+    handleResize(); // Check initially
+    window.addEventListener('resize', handleResize); // Listen for window resize event
+
+    return () => {
+      clearTimeout(timer); // Cleanup function to clear the timer
+      window.removeEventListener('resize', handleResize); // Cleanup function to remove event listener
+    };
   }, []);
 
   return (
@@ -56,27 +67,26 @@ function App() {
           <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>
-             <div className="banner-container">
-              <img src={bannerImage} alt="Banner" className="banner-image" />
-              <div className="banner-text">Tampa Bay Mental Health</div>
-              <div className={showSlogan ? "slogan show" : "slogan"}>
-                <span>Reliable, Affordable, Help.</span>
-                <div className="butt">
-                  <a href="/location1">Schedule Now</a>
+              {isMobile && <MobilePopup />} {/* Conditionally render MobilePopup if user is on a mobile device */}
+              <div className="banner-container">
+                <img src={bannerImage} alt="Banner" className="banner-image" />
+                <div className="banner-text">Tampa Bay Mental Health</div>
+                <div className={showSlogan ? "slogan show" : "slogan"}>
+                  <span>Reliable, Affordable, Help.</span>
+                  <div className="butt">
+                    <a href="/location1">Schedule Now</a>
+                  </div>
+                  <div className="butt">
+                    <a href="/treatment1">Treatment</a>
+                  </div>
+                  <span className="cursor"></span>
                 </div>
-                <div className="butt">
-                  <a href="/treatment1">Treatment</a>
-                </div>
-                <span className="cursor"></span>
               </div>
-            </div>
               <TeamSection/>
               <Carousel images={countries}/>   
               <div className="content">
-                
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
-                 
                 </div>
               </div>
               <Bottom />
