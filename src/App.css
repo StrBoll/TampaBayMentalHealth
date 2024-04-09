@@ -90,6 +90,8 @@
   padding: 5px 10px; /* Padding for the button */
   background-color: white;
   border-radius: 2em;
+  margin-right: 10px; /* Add some margin between buttons */
+  font-size: 25px;
 }
 
 .butt:hover {
@@ -97,6 +99,7 @@
   border-color: #f02b2b; /* Darker border color on hover */
 }
 
-/* Rest of your CSS remains the same */
-
+.button-container {
+  margin-top: 10px; /* Add margin between text and buttons */
+}
 

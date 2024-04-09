@@ -73,12 +73,15 @@ function App() {
                 <div className="banner-text">Tampa Bay Mental Health</div>
                 <div className={showSlogan ? "slogan show" : "slogan"}>
                   <span>Reliable, Affordable, Help.</span>
+                 
+                  <div className="button-container">
                   <div className="butt">
                     <a href="/location1">Schedule Now</a>
                   </div>
                   <div className="butt">
                     <a href="/treatment1">Treatment</a>
                   </div>
+                </div>
                   <span className="cursor"></span>
                 </div>
               </div>
