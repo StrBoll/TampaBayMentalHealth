@@ -70,28 +70,24 @@ function App() {
               {isMobile && <MobilePopup />} {/* Conditionally render MobilePopup if user is on a mobile device */}
               <div className="banner-container">
                 <img src={bannerImage} alt="Banner" className="banner-image" />
-                <div className="banner-text">Tampa Bay Mental Health</div>
+                <div className="banner-text banner-text-animation">Tampa Bay Mental Health</div>
                 <div className={showSlogan ? "slogan show" : "slogan"}>
                   <span>Reliable, Affordable, Help.</span>
-                 
                   <div className="button-container">
-                  <div className="butt">
-                    <a href="/location1">Schedule Now</a>
-                  </div>
-                  <div className="butt">
-                    <a href="/treatment1">Treatment</a>
-                  </div>
+                <div className="butt">
+                  <a href="/location1" className="button-link">Contact Us</a>
                 </div>
+                <div className="butt">
+                  <a href="/treatment1" className="button-link">Discover TMS</a>
+                </div>
+              </div>
                   <span className="cursor"></span>
                 </div>
               </div>
+
               <TeamSection/>
               <Carousel images={countries}/>   
-              <div className="content">
-                <div>
-                  <ImageOverlay imageUrl={man} text="Expert care" />
-                </div>
-              </div>
+            
               <Bottom />
             </React.Fragment>
           } />

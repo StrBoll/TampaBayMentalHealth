@@ -37,6 +37,8 @@
 
 /* Inside your App.css file */
 
+
+
 .banner-container {
   position: relative; /* Ensure the banner text is positioned relative to the container */
 }
@@ -67,39 +69,61 @@
 
 .slogan {
   position: absolute;
-  top: 40%;
+  top: 38%;
   left: 50%;
   transform: translateX(-50%);
   color: white;
   font-size: 2.5vw;
-  text-align: center;
+  text-align: center; 
   overflow: hidden;
   white-space: nowrap;
   width: auto;
-  animation: typing 6s steps(80, end);
 }
 
 .slogan.show {
   opacity: 1;
 }
 
+
+/* Inside your App.css file */
+
 .butt {
   display: inline-block;
-  border: 2px solid #ffffff; /* Border color */
+  width: 40%;
+  border: 4px solid white; /* Add border style with white color */
   border-radius: 5px; /* Rounded corners */
   padding: 5px 10px; /* Padding for the button */
   background-color: white;
-  border-radius: 2em;
+  margin-top: 50px;
   margin-right: 10px; /* Add some margin between buttons */
-  font-size: 25px;
+  font-size: 18px;
+  color: #07538d; /* Blue text color */
+  text-decoration: none; /* Remove default underline */
 }
 
 .butt:hover {
-  background-color: #f02b2b; /* Darker background color on hover */
-  border-color: #f02b2b; /* Darker border color on hover */
+  color: white; /* Change text color to white on hover */
+  background-color: #07538d; /* Change background color to blue on hover */
+  border-color: #07538d; /* Change border color to blue on hover */
 }
 
-.button-container {
-  margin-top: 10px; /* Add margin between text and buttons */
+/* Apply styles to anchor elements inside .butt */
+.butt a {
+  display: block; /* Ensure the anchor elements fill the entire button area */
+  color: inherit; /* Inherit color from the parent (.butt) */
+  text-decoration: none; /* Remove default underline */
+  padding: 5px 10px; /* Padding for the anchor elements */
 }
+
+/* Change anchor element color on hover */
+.butt a:hover {
+  color: white; /* Change text color to white on hover */
+}
+
+
+/* Optional: Add styles for the cursor */
+.cursor {
+  /* Your cursor styles here */
+}
+
 
