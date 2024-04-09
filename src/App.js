@@ -27,6 +27,13 @@ import TeamSection from './Teamsec.js';
 import Bio from './Bio.jsx';
 import MobilePopup from './mobilepopup.js'; 
 
+
+function scrollToBottom() {
+  window.scrollTo({
+    top: document.body.scrollHeight,
+    behavior: "smooth"
+  });
+}
 function App() {
   const [showSlogan, setShowSlogan] = useState(false);
   const [isMobile, setIsMobile] = useState(false);
@@ -74,9 +81,10 @@ function App() {
                 <div className={showSlogan ? "slogan show" : "slogan"}>
                   <span>Reliable, Affordable, Help.</span>
                   <div className="button-container">
+                
                 <div className="butt">
-                  <a href="/location1" className="button-link">Contact Us</a>
-                </div>
+                <a onClick={scrollToBottom} className="button-link">Contact Us</a>
+              </div>
                 <div className="butt">
                   <a href="/treatment1" className="button-link">Discover TMS</a>
                 </div>
