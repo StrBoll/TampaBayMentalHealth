@@ -56,14 +56,20 @@ function App() {
           <Route path="/checkinsurance" element={<Checkinsurance />} />
           <Route path="/" element={
             <React.Fragment>
-              <div className="banner-container">
-                <img src={bannerImage} alt="Banner" className="banner-image" />
-                <div className="banner-text">Tampa Bay Mental Health</div>
-                <div className={showSlogan ? "slogan show" : "slogan"}>
-                  <span>Reliable, Affordable, Help.</span>
-                  <span className="cursor"></span>
+             <div className="banner-container">
+              <img src={bannerImage} alt="Banner" className="banner-image" />
+              <div className="banner-text">Tampa Bay Mental Health</div>
+              <div className={showSlogan ? "slogan show" : "slogan"}>
+                <span>Reliable, Affordable, Help.</span>
+                <div className="butt">
+                  <a href="/location1">Schedule Now</a>
                 </div>
+                <div className="butt">
+                  <a href="/treatment1">Treatment</a>
+                </div>
+                <span className="cursor"></span>
               </div>
+            </div>
               <TeamSection/>
               <Carousel images={countries}/>   
               <div className="content">

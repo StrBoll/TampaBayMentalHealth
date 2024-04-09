@@ -83,6 +83,20 @@
   opacity: 1;
 }
 
+.butt {
+  display: inline-block;
+  border: 2px solid #ffffff; /* Border color */
+  border-radius: 5px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for the button */
+  background-color: white;
+  border-radius: 2em;
+}
+
+.butt:hover {
+  background-color: #f02b2b; /* Darker background color on hover */
+  border-color: #f02b2b; /* Darker border color on hover */
+}
+
 /* Rest of your CSS remains the same */
 
 
