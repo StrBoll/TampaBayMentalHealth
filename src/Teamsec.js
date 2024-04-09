@@ -1,20 +1,28 @@
 import React from 'react';
 import './team.css';
 import { Link } from "react-router-dom"; // Import Link component
+
 const TeamSection = () => {
     const styles = {
         title: {
             fontSize: '48px',
             marginBottom: '20px', // Add margin below the title
             color: '#07538D',
-            fontFamily: 'goldenbook, serif',
+            fontFamily: 'ubuntu, sans-serif',
             marginTop: '0', // Place the title at the top of the container
+        },
+        subtitle: {
+            fontSize: '24px', // Adjust the font size as needed
+            fontFamily: 'ubuntu, sans-serif', // Specify the font family
+            color: '#000', // Black color
+            marginBottom: '28px', // Add margin below the subtitle
         },
     };
 
     return (
         <div className="tee">
             <p style={styles.title}>Meet Our Team</p>
+            <p style={styles.subtitle}>Learn more about our talented team of board-certified psychiatrists and psychologists</p>
             <Link to="/meet" className="wrapper">
                 <div className="card_Container">
                     <TeamMember
@@ -38,7 +46,7 @@ const TeamSection = () => {
                         imageSrc="./Grimaldi.jpg"
                     />
                 </div>
-                </Link>
+            </Link>
         </div>
     );
 };
