@@ -10,7 +10,6 @@
 .gradient {
     background: linear-gradient(to bottom, rgba(225, 220, 220, 0.75), rgba(225, 220, 220, 0)); /* Gradient from semi-transparent to fully transparent */
     height: 200px;
-    border-radius: 4px 4px 0px 0px;
 }
 
 .gradient .gradient-image {
@@ -20,7 +19,7 @@
 
 .profile-down img {
     height: 110px;
-    border-radius: 100px 100px 0 0; /* Apply rounded edges only to top corners */
+border-radius: 40px;
     margin-top: -75px;
     padding: 5px;
     background: rgba(201, 80, 80, 0.5);
