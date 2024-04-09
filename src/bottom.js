@@ -37,7 +37,7 @@ const Bottom = () => {
 
 const styles = {
   bottom: {
-    backgroundColor: '#487083',
+    backgroundColor: '#07538d',
     color: '#fff',
     textAlign: 'center',
     padding: '20px 0',
@@ -82,8 +82,8 @@ const styles = {
   },
   button: {
     padding: '10px 20px',
-    backgroundColor: '#a8cdbd',
-    color: 'white',
+    backgroundColor: 'white',
+    color: '#07538d',
     border: 'none',
     borderRadius: '25px', // Set border-radius to half of the button height for stadium shape
     cursor: 'pointer',
