@@ -44,7 +44,7 @@
   margin: 0 1em;
 }
 .card:hover {
-  background-color: #c6c0c0; /* Darker background color on hover */
+  background-color: #07538d; /* Darker background color on hover */
   border-color: #c6c0c0; /* Darker border color on hover */
 }
 .card .imbBx {

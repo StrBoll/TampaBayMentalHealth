@@ -66,8 +66,8 @@ function Navbar() {
           </div>
           </div>
         <a href="tel:8132692920" className="phone-number-btn">Call Us: (813) 269-2920</a>
-        <a href={`mailto:example@gmail.com`} className='phone-number-btn'>
-          email us
+        <a href={`mailto:office@tampabaymentalhealth.net`} className='phone-number-btn'>
+          Email Us
         </a>
         <button className="nav-btn nav-close-btn" onClick={showNavbar}>
           <FaTimes />
