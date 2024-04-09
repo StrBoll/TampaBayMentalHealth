@@ -1,9 +1,8 @@
 import React from 'react';
-import './team.css'
+import './team.css';
 
 const TeamSection = () => {
     const styles = {
-    
         title: {
             fontSize: '48px',
             marginBottom: '20px', // Add margin below the title
@@ -11,42 +10,47 @@ const TeamSection = () => {
             fontFamily: 'goldenbook, serif',
             marginTop: '0', // Place the title at the top of the container
         },
-    }
+    };
+
     return (
         <div className="tee">
-        <p style={styles.title}>Meet Our Team</p>
-        <div className="wrapper">
-            
-            <div className="card_Container">
-                <TeamMember
-                    name="James Henry"
-                    role="Web Analyst"
-                    imageSrc="./image1.jpg"
-                />
-                <TeamMember
-                    name="John Doe"
-                    role="UI/UX Designer"
-                    imageSrc="./bannerCarousel.jpeg"
-                />
-                 <TeamMember
-                    name="John Doe"
-                    role="UI/UX Designer"
-                    imageSrc="./bannerCarousel.jpeg"
-                />
-                
-                <TeamMember
-                    name="Alex Morgan"
-                    role="Back-End Web Developer"
-                    imageSrc="./bannerCarousel.jpeg"
-                />
+            <p style={styles.title}>Meet Our Team</p>
+            <div className="wrapper">
+                <div className="card_Container">
+                    <TeamMember
+                        name="APRN Yanet Fernandez Diaz"
+                        role="Psychiatrist"
+                        imageSrc="./Yanet.png"
+                    />
+                    <TeamMember
+                        name="Dr. Orlando L. Ruano, DO"
+                        role="Psychiatrist"
+                        imageSrc="./Ruano.png"
+                    />
+                    <TeamMember
+                        name="APRN Stefanny Molina Mesa"
+                        role="Psychiatrist"
+                        imageSrc="./Steffany.png"
+                    />
+                    <TeamMember
+                        name="Dr. Joseph Grimaldi, PhD"
+                        role="Psychologist"
+                        imageSrc="./Grimaldi.jpg"
+                    />
+                </div>
             </div>
         </div>
-        </div>
-
     );
 };
 
 const TeamMember = ({ name, role, imageSrc }) => {
+    const styles = {
+        role: {
+            fontSize: '18px', // Adjust the font size as needed
+            color: '#07538D', // Dark blue color
+        },
+    };
+
     return (
         <div className="card">
             <div className="imbBx">
@@ -56,10 +60,9 @@ const TeamMember = ({ name, role, imageSrc }) => {
                 <div className="contentBx">
                     <h3>
                         {name} <br />
-                        <span>{role}</span>
+                        <span style={styles.role}>{role}</span> {/* Apply styles to the role span */}
                     </h3>
                 </div>
-                
             </div>
         </div>
     );

@@ -48,8 +48,8 @@ function App() {
           <Route path="/bookapt" element={<Bookapt />} />
           <Route path="/location1" element={<Loc1 />} />
           <Route path="/location2" element={<Loc2 />} />
-          <Route path="/treatments" element={<Treatment />} />
-          <Route path="/treatment1" element={<Treatments1/>}/>
+          <Route path="/treatments" element={<Treatment3 />} />
+          <Route path="/treatment1" element={<Treatment3/>}/>
           <Route path="/Meet" element={<Bio/>}/>
           <Route path="/treatment2" element={<Treatment2/>}/>
           <Route path="/treatment3" element={<Treatment3/>}/>
@@ -66,19 +66,8 @@ function App() {
               </div>
               <TeamSection/>
               <Carousel images={countries}/>   
-              <iframe src="https://www.google.com/maps/d/u/0/embed?mid=13OSFSfuM3OZS3KLvxp50F2IhOqrkMv0&ehbc=2E312F&noprof=1" width="640" height="480"></iframe>
               <div className="content">
-                <div className="image-container">
-                  <div className="image-wrapper">
-                    <img src={image1} alt="Image 1" />
-                  </div>
-                  <div className="image-wrapper">
-                    <img src={image2} alt="Image 2" />
-                  </div>
-                  <div className="image-wrapper">
-                    <img src={image3} alt="Image 3" />
-                  </div>
-                </div>
+                
                 <div>
                   <ImageOverlay imageUrl={man} text="Expert care" />
                  
