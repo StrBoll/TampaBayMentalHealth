@@ -24,17 +24,17 @@ function Navbar() {
           <img src={logoImage} alt="Logo" style={{ width: "150px", height: "auto" }} />
         </Link>
 
-        <div className="more-button"> {/* Changed class name */}
+        <div className="dropbuttons"> {/* Changed class name */}
           <Link to="/bookapt" className="book-appointment-btn"> {/* Use Link instead of <a> */}
             Book an appointment
           </Link>
         </div>
-        <div className="more-button"> {/* Changed class name */}
-          <Link to="/checkinsurance" className="checkinsurance-btn"> {/* Use Link instead of <a> */}
+        <div className="dropbuttons"> {/* Changed class name */}
+          <Link to="/checkinsurance" className="check-inusrance"> {/* Use Link instead of <a> */}
             Accepted insurance
           </Link>
         </div>
-        <div className="more-button" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}> {/* Changed class name */}
+        <div className="dropbuttons" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}> {/* Changed class name */}
          
           <div class="dropdown">
               <button class="dropbtn"> 
@@ -50,7 +50,7 @@ function Navbar() {
           </div>
           
         </div>
-        <div className="more-button" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
+        <div className="dropbuttons" onMouseEnter={toggleDropdown} onMouseLeave={toggleDropdown}>
         <div class="dropdown">
               <button class="dropbtn"> 
             More <FaChevronDown style={{ verticalAlign: "middle", marginBottom: "1px", fontWeight: 250, fontSize: "0.6em" }} />
