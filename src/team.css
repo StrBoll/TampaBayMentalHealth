@@ -31,7 +31,7 @@
 }
 
 .card {
-  width: 18em;
+  width: 17em;
   /* Remove fixed height */
   /* height: 90%; */
   background-color: #fff;
@@ -99,10 +99,68 @@
   color: #555;
 }
 @media screen and (max-width: 600px) {
+  .tee{
+    width: 100%; /* Set the width of the card to 100% on smaller screens */
+    height: 70%;
+    max-width: 300px; /* Limit maximum width on smaller screens */
+  }
   .upc {
       width: 100%; /* Set the width of the card to 100% on smaller screens */
-      height: 70%; /* Allow the height to adjust automatically */
-      max-width: 300px; /* Limit maximum width on smaller screens */
-
+      height: 100%; /* Allow the height to adjust automatically */
+     
+     
+  }
+  .card{
+    width: 7.35em;
+    border-radius: 2em;
+    box-shadow: 0 0 2em rgba(0, 0, 0, .2);
+    padding: 1em 1em;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin: 0 1em;
+  }
+  .card .imbBx {
+    width: 6.5em;
+    height: 7em;
+    border-radius: 50%;
+    border: 5px solid var(--color);
+    padding: 2px;
+    margin-bottom: 0em;
+  }
+  
+  .card .imbBx img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+  }
+  
+  .card .content {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+  }
+  
+  .card .content .contentBx h3 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    position: relative;
+    top: .2em;
+  }
+  
+  .card .content .contentBx h3 .card__name {
+    color: var(--color);
+  }
+  
+  .card .content .sci {
+    list-style: none;
+    display: flex;
+    margin-top: 0em;
+    padding-left: 0;
+  }
+  
+  .card .content .sci li {
+    margin: 0 0.5em;
   }
 }

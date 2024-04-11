@@ -26,7 +26,7 @@ import { countries } from './newcarousel.js';
 import TeamSection from './Teamsec.js';
 import Bio from './Bio.jsx';
 import MobilePopup from './mobilepopup.js'; 
-
+import { Link } from "react-router-dom"; // Import Link component
 
 function scrollToBottom() {
   window.scrollTo({
@@ -86,7 +86,8 @@ function App() {
                 <a onClick={scrollToBottom} className="button-link">Contact Us</a>
               </div>
                 <div className="butt">
-                  <a href="/treatment1" className="button-link">Discover TMS</a>
+                <Link to="/treatment1" className="button-link">Discover TMS</Link>
+                
                 </div>
               </div>
                   <span className="cursor"></span>
