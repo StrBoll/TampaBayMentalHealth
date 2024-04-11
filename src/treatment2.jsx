@@ -1,16 +1,26 @@
 import React from 'react';
-import psychiatryImage from './images/Psychiatry.png'; // Import your PNG image
+import PsychiatryVideo from './Media/bannervid.mp4'; // Import your video file
+import './Treatment2.css'; // Import CSS file for styling
+import SecondSection from './T2secondsection'; // Import SecondSection component
 
-const Treatment2 = () => {
+const Treatment3 = () => {
   return (
-    <div className="banner-container">
-      {/* Use the image directly */}
-      <div className="banner">
-        <img src={psychiatryImage} alt="Psychiatry Banner" style={{ width: '100%', height: 'auto' }} />
-        {/* You can add content or text inside the banner if needed */}
+    <div>
+      {/* First Section */}
+      <div className="video-container" style={{ position: 'relative', overflow: 'hidden', backgroundColor: '#f0f0f0' }}>
+        {/* Video */}
+        <h1 className="video-text">Accessible Psychiatry</h1>
+        <video autoPlay loop muted className="fullscreen-video">
+          <source src={PsychiatryVideo} type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+
       </div>
+
+      <SecondSection />      
+      
     </div>
   );
 };
 
-export default Treatment2;
+export default Treatment3;

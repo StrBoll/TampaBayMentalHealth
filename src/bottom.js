@@ -25,7 +25,7 @@ const Bottom = () => {
               height="100%"
               frameBorder="0"
               style={{ border: 0 }}
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3502.3437563037693!2d-81.76918458546154!3d26.2415256976223!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c7a189a784b7%3A0x9a03f4e8bcfc2544!2sTampa%20Bay%20Mental%20Health%20Clinic!5e0!3m2!1sen!2sus!4v1648698960744!5m2!1sen!2sus"
+              src ="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3521.504637374879!2d-82.55813602409533!3d28.039612375993798!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88c2c1d0a69bffff%3A0xbf19c42cee2a9da6!2s6916%20W%20Linebaugh%20Ave%20%23102%2C%20Tampa%2C%20FL%20336255815!5e0!3m2!1sen!2sus!4v1712007868312!5m2!1sen!2sus"
               allowFullScreen
             ></iframe>
           </div>

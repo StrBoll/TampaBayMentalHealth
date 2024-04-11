@@ -1,10 +1,10 @@
 import React from 'react';
 import Bottom from './bottom';
-import Particlebg from './Particles';
 import Placeholder from './images/BETTERLOGO.png';
 import BlueGradientImage from './images/LinebaughOffice.jpeg'; // Import your first image
 import SecondImage from './images/officeWaters.png'; // Import your second image
-import './bookapt.css'
+import { Link } from "react-router-dom"; 
+import './bookapt.css';
 
 const Bookapt = () => {
 
@@ -22,9 +22,9 @@ const Bookapt = () => {
 Psychiatry Services, Psychology Services, TMS Brain Mapping            </div>
             
           </div>
-          <div className='profbutton'>
-              <a href="/location1">Schedule Now</a>
-            </div>
+          <Link to="/location2" className="profbutton"> {/* Use Link instead of <a> */}
+              Schedule Now
+          </Link>
           <div className='mapContainer'>
             <iframe
               title="Google Map"
@@ -48,9 +48,9 @@ Psychiatry Services, Psychology Services, TMS Brain Mapping            </div>
             <div className='profile-description'>
               Group Therapy, Spanish Speakers Exclusive                                            
             </div>
-            <div className='profbutton'>
-              <a href="/location2">Schedule Now</a>
-            </div>
+            <Link to="/location2" className="profbutton"> {/* Use Link instead of <a> */}
+              Schedule Now
+          </Link>
           </div>
           <div className='mapContainer'>
             <iframe
@@ -64,7 +64,6 @@ Psychiatry Services, Psychology Services, TMS Brain Mapping            </div>
             ></iframe>
           </div>
         </div>
-        <Particlebg/>
       </div>
     </div>
   );

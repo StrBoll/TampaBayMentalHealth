@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from 'react';
-import image3 from './images/image3.jpg';
 
 function Header() {
   const [headerStyle, setHeaderStyle] = useState({

@@ -6,27 +6,22 @@ import Bottom from './bottom.js';
 import Checkinsurance from './Checkinsurance.jsx';
 import ImageOverlay from './ImageOverlay.jsx';
 import SearchableList from './list.js';
-import image1 from './images/image1.jpg';
-import image2 from './images/image2.jpg';
-import image3 from './images/image3.jpg';
+
 import './skyline.css';
 import Bookapt from './bookapt.jsx';
 import Navbar from './navbar.js';
-import man from './images/man.jpg';
-import Card from './Card.jsx';
-import Carousel from './Carousel.js';
-import Loc1 from './location1.jsx';
-import Loc2 from './location2.jsx';
-import Treatment from './Treatments.jsx';
-import Treatments1 from './Treatment1.jsx';
+import Loc1 from './Linebaugh.jsx';
+import Loc2 from './Linebaugh.jsx';
 import Treatment2 from './treatment2.jsx';
 import Treatment3 from './treatment3.jsx';
+import Treatment4 from './Treatment4.jsx';
 import bannerImage from './images/skylineFinal.jpeg';
 import { countries } from './newcarousel.js';
 import TeamSection from './Teamsec.js';
 import Bio from './Bio.jsx';
-import MobilePopup from './mobilepopup.js'; 
-import { Link } from "react-router-dom"; // Import Link component
+import MobilePopup from './mobilepopup.js';
+import Thanks from './thanks.jsx'; // Import the Thanks component
+import { Link } from "react-router-dom"; 
 
 function scrollToBottom() {
   window.scrollTo({
@@ -70,8 +65,10 @@ function App() {
           <Route path="/treatment1" element={<Treatment3/>}/>
           <Route path="/Meet" element={<Bio/>}/>
           <Route path="/treatment2" element={<Treatment2/>}/>
-          <Route path="/treatment3" element={<Treatment3/>}/>
+          <Route path="/treatment3" element={<Treatment4/>}/>
+          <Route path="/treatment4" element={<Treatment4/>}/>
           <Route path="/checkinsurance" element={<Checkinsurance />} />
+          <Route path="/thanks" element={<Thanks />} /> {/* Define route for Thanks component */}
           <Route path="/" element={
             <React.Fragment>
               {isMobile && <MobilePopup />} {/* Conditionally render MobilePopup if user is on a mobile device */}
@@ -87,7 +84,6 @@ function App() {
               </div>
                 <div className="butt">
                 <Link to="/treatment1" className="button-link">Discover TMS</Link>
-                
                 </div>
               </div>
                   <span className="cursor"></span>
@@ -95,7 +91,6 @@ function App() {
               </div>
 
               <TeamSection/>
-              <Carousel images={countries}/>   
             
               <Bottom />
             </React.Fragment>

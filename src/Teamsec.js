@@ -28,22 +28,22 @@ const TeamSection = () => {
                     <TeamMember
                         name="APRN Yanet Fernandez Diaz"
                         role="Psychiatrist"
-                        imageSrc="./Yanet.png"
+                        
                     />
                     <TeamMember
                         name="Dr. Orlando L. Ruano, DO"
-                        role="Psychiatrist"
-                        imageSrc="./Ruano.png"
+                        role="Medical Director"
+                        imageSrc="./ruano.png"
                     />
                     <TeamMember
                         name="APRN Stefanny Molina Mesa"
                         role="Psychiatrist"
-                        imageSrc="./Steffany.png"
+                        
                     />
                     <TeamMember
                         name="Dr. Joseph Grimaldi, PhD"
                         role="Psychologist"
-                        imageSrc="./Grimaldi.jpg"
+                        
                     />
                 </div>
             </Link>

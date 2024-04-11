@@ -4,19 +4,8 @@ import BrainswayImage from './images/Brainsway.webp'; // Import image
 import H1Coil from './images/H1Coil.png';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faCircleCheck } from '@fortawesome/free-solid-svg-icons';
-import YouTube from 'react-youtube';
 
-const videoId = 'mjA6oQdLr9U';
-  const opts = {
-    playerVars: {
-      autoplay: 0, // Autoplay disabled
-      origin: window.location.origin, // Set the origin to your website
-      showinfo: 0,
-      rel: 0,
-      
-    },
 
-  };
 const SecondSection = () => {
   return (
     <div className="second-section">
@@ -35,7 +24,6 @@ const SecondSection = () => {
 
       <div className="text-box3">
         
-        <YouTube videoId={videoId} opts={opts} className="youtube-video" />
         <p className="title3">
           Patient Testimonial
         </p>

@@ -1,15 +1,17 @@
-
-.h{
-    
-    text-decoration: none;
-    color:white;
+/* Locations.css */
+.h {
+   text-decoration: none;
+   color: rgb(109, 20, 243);
  }
- .htext{
-    font-size: 15px;
-    background: rgba(29, 23, 198, 0.75);
-    margin: 10px 100px;
-    padding-top: 8px;
-    padding-bottom: 10px;
-    border-radius: 40px;
-    width: 700px;
+ 
+ .htext {
+   font-size: 50px;
+   background: #07538d;
+   margin: 10px 0; /* Adjust margin to center horizontally */
+   padding-top: 8px;
+   padding-bottom: 10px;
+   color: rgb(65, 23, 23);
+   width: 100%;
+   
  }
+ 

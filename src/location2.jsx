@@ -6,7 +6,7 @@ const Loc2 = () => {
   return (
     <div>
         <div className='htext'>
-            <h1 className='h'>Book an appointment!</h1>
+            <h1 className='h'>Waters Office</h1>
         </div>
 
         <MyApp></MyApp>
