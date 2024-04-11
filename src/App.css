@@ -1,0 +1,133 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  background: rgb(255, 255, 255, 0);
+}
+
+.content {
+  width: 100%; /* Ensure the content spans the entire width */
+  margin: 0 auto; /* Center the content horizontally */
+  
+}
+.image-container {
+  display: flex;
+  overflow-x: auto; 
+  background-color: #d8b578; /* Set background color with opacity */
+  padding: 15px; /* Add padding to the container */
+  
+}
+.image-container img {
+  scroll-snap-align: start; /* Align images to the start of the container */
+  width: 300px; /* Set a fixed width for the images */
+  height: auto;
+  margin-right: 0px; /* Add margin between images */
+}
+
+.image-wrapper {
+  flex: 1; /* Make the image wrappers fill the available spa ce */
+  margin: 0 2px; /* Add margin to create spacing between images */
+}
+
+.image-wrapper img {
+  width: 50%; /* Ensure images fill their containers */
+  height: auto;
+}
+
+/* Inside your App.css file */
+
+
+
+.banner-container {
+  position: relative; /* Ensure the banner text is positioned relative to the container */
+}
+
+.banner-text {
+  position: absolute; /* Position the text absolutely within the container */
+  top: 25%; /* Align the text vertically at 50% from the top */
+  left: 50%; /* Align the text horizontally at 50% from the left */
+  transform: translate(-50%, -50%); /* Center the text precisely */
+  color: white; /* Set the text color */
+  font-size: 4vw; /* Set the font size relative to the viewport width */
+  
+  text-align: center; /* Center align the text */
+  
+}
+
+/* Inside your App.css file */
+/* Inside your App.css file */
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+.slogan {
+  position: absolute;
+  top: 38%;
+  left: 50%;
+  transform: translateX(-50%);
+  color: white;
+  font-size: 2.5vw;
+  text-align: center; 
+  overflow: hidden;
+  white-space: nowrap;
+  width: auto;
+}
+
+.slogan.show {
+  opacity: 1;
+}
+
+
+/* Inside your App.css file */
+
+.butt {
+  display: inline-block;
+  width: 45%;
+  border: 4px solid white; /* Add border style with white color */
+  border-radius: 7px; /* Rounded corners */
+  padding: 5px 10px; /* Padding for the button */
+  background-color: white;
+  margin-top: 50px;
+  margin-right: 10px; /* Add some margin between buttons */
+  font-size: 18px;
+  color: #07538d; /* Blue text color */
+  text-decoration: none; /* Remove default underline */
+}
+
+.butt:hover {
+  color: white; /* Change text color to white on hover */
+  background-color: #07538d; /* Change background color to blue on hover */
+  border-color: #07538d; /* Change border color to blue on hover */
+}
+
+/* Apply styles to anchor elements inside .butt */
+.butt a {
+  display: block; /* Ensure the anchor elements fill the entire button area */
+  color: inherit; /* Inherit color from the parent (.butt) */
+  text-decoration: none; /* Remove default underline */
+  padding: 5px 10px; /* Padding for the anchor elements */
+}
+
+/* Change anchor element color on hover */
+.butt a:hover {
+  color: white; /* Change text color to white on hover */
+}
+
+
+
+
+/* Optional: Add styles for the cursor */
+.cursor {
+  /* Your cursor styles here */
+}
+
+
+
+

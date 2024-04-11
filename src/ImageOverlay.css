@@ -1,0 +1,38 @@
+    .outer-container {
+    background: linear-gradient(45deg, #ff0000, #0000ff); /* Adjust color as needed */
+    width: 100%;
+    padding-top: 20px; /* Adjust top padding as needed */
+    padding-bottom: 20px; /* Adjust bottom padding as needed */
+    margin-top: 50px;
+  }
+  
+    .color-container {
+    display: flex;
+    justify-content: center;
+  }
+  
+  .image-overlay-container {
+    position: relative;
+    width: 70%; /* Adjust width as needed */
+    max-width: 1000px; /* Limit maximum width if desired */
+    height: 0; /* Set initial height to 0 */
+    padding-top: 60%; /* Maintain aspect ratio (e.g., 60% for a 3:2 ratio) */
+    background-size: contain;
+    background-position: center;
+    background-repeat: no-repeat;
+    border-radius: 500px; /* Rounded corners */
+    margin: 0 auto; /* Center horizontally */
+  }
+  
+  .overlay-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Optional text shadow */
+  }
+  

@@ -1,0 +1,30 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 0;
+  background-color: #F9F9F9;
+  z-index: 1; /* Ensure the video is above the .special-background */
+}
+  
+.special-background {
+  background-color: #F9F9F9;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  /* Lower z-index to ensure it's behind the video */
+  
+}
+
+@media (max-width: 768px) {
+  /* Adjust styles for smaller screens */
+  .video-container {
+    height: 200px; /* Example height for smaller screens */
+  }
+  
+  .video-frame {
+    height: 100%; /* Adjust video height accordingly */
+  }
+
+  /* You can add more styles here for other elements if needed */
+}
